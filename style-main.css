@@ -21,13 +21,32 @@ a:hover {
       cursor: pointer;
 }
 
+/* h1, h2, h3, p, etc should follow */
+
 
 /* font imports */
+
+@font-face {
+      font-family: "Neue Machina Medium";
+      src: url("./assets/fonts/neue_machina/PPNeueMachina-PlainMedium.woff2") format("woff2"),
+            url("./assets/fonts/neue_machina/PPNeueMachina-PlainMedium.woff") format("woff")
+}
+
+@font-face {
+      font-family: "Neue Machina Regular";
+      src: url("./assets/fonts/neue_machina/PPNeueMachina-PlainRegular.woff2") format("woff2"),
+            url("./assets/fonts/neue_machina/PPNeueMachina-PlainRegular.woff") format("woff")
+}
+
+
+h1 {
+      font-family: "Neue Machina Medium";
+}
 
 /* font-family: "stinger-variable", sans-serif;
 font-variation-settings: "wdth" 100, "wght" 400; */
 
-/* h1, h2, h3, p, etc should follow */
+
 
 /* Header Styling */
 
@@ -70,4 +89,19 @@ header ul li {
 
 .landing-section {
       background-color: #8EB4FD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+
+}
+
+.landing-sections {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid black;
+      height: 100%;
+      width: 100%;
 }
