@@ -17,11 +17,15 @@ const changeColor = (container) => {
 
 paragraphContainer.forEach((container) => {
   container.addEventListener("mouseenter", () => {
+    const image = container.querySelector(".hidden-image");
     changeColor(container);
+    image.style.visibility = "visible";
   });
 
   container.addEventListener("mouseleave", () => {
     container.style.backgroundColor = "transparent";
+    const image = container.querySelector(".hidden-image");
+    image.style.visibility = "hidden";
   });
 });
 

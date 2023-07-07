@@ -99,9 +99,48 @@ header ul li {
 
 .landing-sections {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 0 10vw 0 10vw;
       align-items: center;
       border-bottom: 1px solid black;
       height: 100%;
       width: 100%;
+}
+
+.landing-sections h4 {
+      font-family: "Neue Machina Medium";
+      font-size: 4rem;
+}
+
+.landing-sections div {
+      border: 1px solid black;
+      border-radius: 40px;
+      padding: 10px 30px;
+      text-align: center;
+}
+
+.landing-sections p {
+      font-family: "stinger-variable", sans-serif;
+      font-variation-settings: "wdth" 100, "wght" 400;
+      font-size: 1.2rem;
+      line-height: 2rem;
+}
+
+.landing-sections:nth-of-type(1) img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      scale: 0.3;
+      margin-left: 53vw;
+      margin-top: -40vh;
+      border-radius: 80px;
+
+}
+
+.hidden-image {
+      visibility: hidden;
+}
+
+.visible-image {
+      visibility: visible;
 }
