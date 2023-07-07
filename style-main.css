@@ -21,17 +21,24 @@ a:hover {
       cursor: pointer;
 }
 
+
+/* font imports */
+
+/* font-family: "stinger-variable", sans-serif;
+font-variation-settings: "wdth" 100, "wght" 400; */
+
 /* h1, h2, h3, p, etc should follow */
 
 /* Header Styling */
 
 header {
       background-color: transparent;
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 5vw;
       height: 15vh;
+      margin-top: 2vh;
 }
 
 header ul {
@@ -44,8 +51,23 @@ header ul {
 }
 
 header ul li {
-      height: 13px;
-      width: 13px;
-      background-color: red;
+      height: 16px;
+      width: 16px;
+      background-color: transparent;
+      border: 1px solid black;
       border-radius: 50%;
+}
+
+/* main sections styling */
+
+.main-section {
+      height: 100vh;
+      width: 100vw;
+}
+
+
+/* section 1 styling  (landing section) */
+
+.landing-section {
+      background-color: #8EB4FD;
 }
