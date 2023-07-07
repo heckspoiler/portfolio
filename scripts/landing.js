@@ -1,5 +1,3 @@
-const landingSection = document.querySelectorAll(".landing-section");
-const header = document.querySelector("header");
 const paragraphContainer = document.querySelectorAll(
   ".landing-section-para-container"
 );
@@ -33,20 +31,21 @@ paragraphContainer.forEach((container) => {
 
 // if landing section is in viewport, the header shouldn't be visible
 
+const landingSection = document.querySelector(".landing-section");
+const header = document.querySelector("header");
+
 const isInViewport = (element) => {
   const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  );
+  return rect.top >= 0 && rect.bottom <= window.innerHeight;
 };
 
-const hideHeader = () => {
-  if (isInViewport(landingSection[0])) {
+const hideHeader = (entry) => {
+  if (entry.isIntersecting) {
     header.style.visibility = "hidden";
   } else {
     header.style.visibility = "visible";
   }
 };
 
-window.addEventListener("scroll", hideHeader());
+const observer = new IntersectionObserver(hideHeader);
+observer.observe(landingSection);
