@@ -7,6 +7,7 @@
       <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Portfolio, Carlo Ettisberger">
       <meta name="author" content="Carlo Ettisberger">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="./scripts/landing.js" type="module"></script>
       <script src="script.js" type="module" defer></script>
       <link rel="stylesheet" href="style-main.css">
       <link rel="stylesheet" href="normalize.css">
@@ -17,18 +18,22 @@
 <body>
       <header class="navbar">
             <ul>
-                  <li href="#about" class="list-object"></li>
-                  <li href="#projects" class="list-object"></li>
-                  <li href="#skills" class="list-object"></li>
-                  <li href="#contact" class="list-object"></li>
+                  <li class="list-object"><a href="#about"></a></li>
+                  <li class="list-object"><a href="#projects"></a></li>
+                  <li class="list-object"><a href="#skills"></a></li>
+                  <li class="list-object"><a href="#contact"></a></li>
             </ul>
       </header>
-      <section>
+      <section class="landing-section main-section" id="landing">
             <section class="landing-sections"></section>
             <section class="landing-sections"></section>
             <section class="landing-sections"></section>
             <section class="landing-sections"></section>
       </section>
+      <section class="about-section main-section" id="about"></section>
+      <section class="projects-section main-section" id="projects"></section>
+      <section class="skills-section main-section" id="skills"></section>
+      <section class="contact-section main-section" id="contact"></section>
 </body>
 
 </html>
