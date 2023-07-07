@@ -126,14 +126,49 @@ header ul li {
       line-height: 2rem;
 }
 
-.landing-sections:nth-of-type(1) img {
+.landing-sections img {
       position: absolute;
       top: 0;
       left: 0;
-      scale: 0.3;
-      margin-left: 53vw;
-      margin-top: -40vh;
+      scale: 0.2;
+}
+
+.landing-sections:nth-of-type(1) img {
+      top: 0;
       border-radius: 80px;
+      scale: 0.4;
+      margin-top: -10vh;
+      margin-left: 52vw;
+
+}
+
+.landing-sections:nth-of-type(2) img {
+      top: 0;
+      border-radius: 80px;
+      scale: 0.1;
+      margin-top: -85vh;
+      margin-left: 28vw;
+      transform: rotate(10deg);
+
+}
+
+
+.landing-sections:nth-of-type(3) img {
+      top: 0;
+      border-radius: 80px;
+      scale: 0.1;
+      margin-top: -45vh;
+      margin-left: -15vw;
+
+}
+
+.landing-sections:nth-of-type(4) img {
+      top: 0;
+      border-radius: 80px;
+      scale: 0.25;
+      margin-top: 50vh;
+      margin-left: 50vw;
+      transform: scaleX(-1);
 
 }
 
