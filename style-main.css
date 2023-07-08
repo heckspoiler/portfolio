@@ -44,13 +44,23 @@ body {
 }
 
 @font-face {
-      font-family: "Made Outter Sans Medium";
-      src: url("./assets/fonts/made-outter-sans/made-outter-sans.otf");
+      font-family: "Made Outer Sans Medium";
+      src: url("./assets/fonts/made-outter-sans/made-outer-sans.otf");
+}
+
+@font-face {
+      font-family: "Made Outer Sans Regular";
+      src: url("./assets/fonts/made-outter-sans/made-outer-sans-regular.otf");
 }
 
 
 h1 {
       font-family: "Neue Machina Medium";
+}
+
+h2 {
+      font-family: "Made Outer Sans Regular";
+      font-size: 200px;
 }
 
 /* font-family: "stinger-variable", sans-serif;
@@ -93,7 +103,7 @@ header ul li {
 }
 
 #current-section {
-      font-family: "Made Outter Sans Medium";
+      font-family: "Made Outer Sans Regular";
       writing-mode: vertical-rl;
       text-orientation: upright;
       font-size: 0.7rem;

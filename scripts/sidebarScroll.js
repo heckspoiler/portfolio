@@ -39,6 +39,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
         currentSection.innerHTML = sectionId.toUpperCase();
+        history.pushState({}, "", `#${sectionId}`);
 
         if (config[sectionId]) {
           config[sectionId]();
