@@ -84,6 +84,11 @@ h2 {
       letter-spacing: 2px;
 }
 
+h3 {
+      font-family: "Nohemi Semibold";
+      font-size: calc(0.6rem + 2vw);
+}
+
 
 /* Header Styling */
 
@@ -152,16 +157,17 @@ header ul li {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 10vw 0 10vw;
+      padding: 1.5vw 10vw 1.5vw 10vw;
       align-items: center;
       border-bottom: 1px solid black;
       height: 100%;
       width: 100%;
+
 }
 
 .landing-sections h4 {
       font-family: "Neue Machina Medium";
-      font-size: 4rem;
+      font-size: calc(2rem + 3vw);
 }
 
 .landing-sections div {
@@ -174,7 +180,7 @@ header ul li {
 .landing-sections p {
       font-family: "stinger-variable", sans-serif;
       font-variation-settings: "wdth" 100, "wght" 400;
-      font-size: 1.2rem;
+      font-size: calc(0.8rem + 1vw);
       line-height: 2rem;
 }
 
@@ -242,7 +248,7 @@ header ul li {
 .about-upper-content-container {
       display: flex;
       align-items: center;
-      gap: 5rem;
+      gap: calc(0.5rem + 5vw);
 }
 
 .about-h2-outlines {
@@ -265,6 +271,7 @@ header ul li {
       display: flex;
       gap: 4rem;
       margin-left: 4rem;
+      flex-wrap: wrap;
 }
 
 .about-h2-carlo-container {
@@ -289,4 +296,60 @@ header ul li {
       left: 0;
       margin-left: calc(17rem + 5vw);
       margin-top: -2rem;
+      background-color: #A4FFDE;
+}
+
+.arrow-about {
+      margin-left: calc(33rem + 8vw);
+      scale: 0.6;
+      margin-top: -1rem;
+}
+
+.description-outlines {
+      color: transparent;
+      -webkit-text-stroke: 1px black;
+}
+
+.description-outlines:hover {
+      cursor: crosshair;
+}
+
+.about-description {
+      margin-left: calc(4rem + 5vw);
+}
+
+.hover-svg-laptop {
+      visibility: hidden;
+      position: absolute;
+      margin-left: 15vw;
+      left: 0;
+      top: 100vh;
+      margin-top: calc(10rem + 14vw);
+}
+
+.hover-svg-laptop--active {
+      visibility: visible !important;
+}
+
+.about-small-text {
+      font-family: "Nohemi Regular";
+      margin-left: calc(18rem + 50vw);
+}
+
+.about-small-text-emphasize {
+      font-family: "Nohemi Semibold";
+      text-decoration-line: underline;
+      /* or overline or line-through */
+      text-decoration-style: dotted;
+      text-decoration-thickness: 2px;
+
+}
+
+.about-wavy-line {
+      position: absolute;
+      top: 100vh;
+      left: 0;
+      margin-left: calc(25rem + 40vw);
+      margin-top: calc(10rem + 10vw);
+      z-index: -1;
 }
