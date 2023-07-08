@@ -53,6 +53,11 @@ body {
       src: url("./assets/fonts/made-outter-sans/made-outer-sans-regular.otf");
 }
 
+@font-face {
+      font-family: "Made Outer Sans Regular Outlines";
+      src: url("./assets/fonts/made-outter-sans/made-outer-sans-regular-outlines.otf");
+}
+
 
 h1 {
       font-family: "Neue Machina Medium";
@@ -218,4 +223,43 @@ header ul li {
 
 /* About Section Styling */
 
-.about-section {}
+.about-section {
+      padding: 2rem 4rem 2rem 4rem;
+}
+
+.about-upper-content-container {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+}
+
+.about-h2-outlines {
+      color: black;
+      font-family: "Made Outer Sans Regular Outlines";
+
+}
+
+.about-h2-green {
+      font-family: "Made Outer Sans Regular";
+      color: #8EFDA0;
+
+
+}
+
+.about-mid-content-container {
+      display: flex;
+      gap: 4rem;
+}
+
+.about-h2-carlo-container {
+      display: flex;
+}
+
+.about-h2-green {
+      position: absolute;
+      margin-left: 5px;
+}
+
+.about-h2-black {
+      margin-top: 5px;
+}
