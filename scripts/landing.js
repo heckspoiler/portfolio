@@ -34,18 +34,16 @@ paragraphContainer.forEach((container) => {
 const landingSection = document.querySelector(".landing-section");
 const header = document.querySelector("header");
 
-const isInViewport = (element) => {
-  const rect = element.getBoundingClientRect();
-  return rect.top >= 0 && rect.bottom <= window.innerHeight;
-};
+const observer = new IntersectionObserver(
+  (entires) => {
+    const entry = entires[0];
+    if (!entry.isIntersecting) {
+      header.style.visibility = "visible";
+    } else {
+      header.style.visibility = "hidden";
+    }
+  },
+  { threshold: 0.05 }
+);
 
-const hideHeader = (entry) => {
-  if (entry.isIntersecting) {
-    header.style.visibility = "hidden";
-  } else {
-    header.style.visibility = "visible";
-  }
-};
-
-const observer = new IntersectionObserver(hideHeader);
 observer.observe(landingSection);

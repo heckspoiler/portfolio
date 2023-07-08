@@ -38,6 +38,11 @@ a:hover {
             url("./assets/fonts/neue_machina/PPNeueMachina-PlainRegular.woff") format("woff")
 }
 
+@font-face {
+      font-family: "Made Outter Sans Medium";
+      src: url("./assets/fonts/made-outter-sans/made-outter-sans.otf");
+}
+
 
 h1 {
       font-family: "Neue Machina Medium";
@@ -58,6 +63,10 @@ header {
       width: 5vw;
       height: 15vh;
       margin-top: 2vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
 }
 
 header ul {
@@ -77,6 +86,14 @@ header ul li {
       border-radius: 50%;
 }
 
+#current-section {
+      font-family: "Made Outter Sans Medium";
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 0.7rem;
+      margin-top: 0.2rem;
+}
+
 /* main sections styling */
 
 .main-section {
@@ -94,11 +111,13 @@ header ul li {
       align-items: center;
       justify-content: space-between;
       height: 100vh;
+      /* z-index: 10; */
 
 }
 
 .landing-sections {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 10vw 0 10vw;
       align-items: center;
@@ -178,4 +197,11 @@ header ul li {
 
 .visible-image {
       visibility: visible;
+}
+
+
+/* About Section Styling */
+
+.about-section {
+      background-color: #A4FFDE;
 }
