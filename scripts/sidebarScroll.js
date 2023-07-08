@@ -1,29 +1,52 @@
-// Assuming you have sections with id's like "section-1", "section-2" etc.
 const sections = document.querySelectorAll(".main-section");
 const sectionIndicator = document.querySelectorAll(".list-object");
 const currentSection = document.querySelector("#current-section");
 
 console.log(sectionIndicator);
 
-// Use the same observer for all sections
+const config = {
+  about: () => {
+    sectionIndicator[0].style.backgroundColor = "#31ABFD";
+    sectionIndicator[1].style.backgroundColor = "transparent";
+  },
+  projects: () => {
+    sectionIndicator.forEach((indicator) => {
+      indicator.style.borderColor = "black";
+    });
+    currentSection.style.color = "black";
+    sectionIndicator[0].style.backgroundColor = "transparent";
+    sectionIndicator[1].style.backgroundColor = "#FC1616";
+    sectionIndicator[2].style.backgroundColor = "transparent";
+  },
+  skills: () => {
+    sectionIndicator.forEach((indicator) => {
+      indicator.style.borderColor = "#FAF126";
+    });
+    currentSection.style.color = "#FAF126";
+    sectionIndicator[1].style.backgroundColor = "transparent";
+    sectionIndicator[2].style.backgroundColor = "#FAF126";
+    sectionIndicator[3].style.backgroundColor = "transparent";
+  },
+  contact: () => {
+    sectionIndicator[2].style.backgroundColor = "transparent";
+    sectionIndicator[3].style.backgroundColor = "#FAF126";
+  },
+};
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      // Check if the entry is intersecting
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
         currentSection.innerHTML = sectionId.toUpperCase();
-        if (sectionId == "about") {
-          sectionIndicator[0].style.backgroundColor = "#31ABFD";
-        } else if (sectionId != "about") {
-          sectionIndicator[0].style.backgroundColor = "transparent";
+
+        if (config[sectionId]) {
+          config[sectionId]();
         }
       }
     });
   },
-  // Trigger the callback when the section is 50% visible
   { threshold: 0.7 }
 );
 
-// Start observing all sections
 sections.forEach((section) => observer.observe(section));
