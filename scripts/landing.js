@@ -34,14 +34,17 @@ paragraphContainer.forEach((container) => {
 const landingSection = document.querySelector(".landing-section");
 const header = document.querySelector("header");
 const all = document.querySelector("#fullPage");
+const body = document.querySelector("body");
 
 const observer = new IntersectionObserver(
   (entires) => {
     const entry = entires[0];
     if (!entry.isIntersecting) {
       header.style.display = "flex";
+      body.style.overflow = "auto";
     } else {
       header.style.display = "none";
+      body.style.overflow = "hidden";
     }
   },
   { threshold: 0.05 }
@@ -52,4 +55,4 @@ observer.observe(landingSection);
 setTimeout(() => {
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 0.7s cubic-bezier(0.5, 0, 0, 1)";
-}, 2000);
+}, 100);
