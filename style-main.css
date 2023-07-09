@@ -152,6 +152,7 @@ header ul li {
 .landing-section {
       position: absolute;
       background-color: #8EB4FD;
+      visibility: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
