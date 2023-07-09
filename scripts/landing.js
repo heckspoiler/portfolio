@@ -33,17 +33,23 @@ paragraphContainer.forEach((container) => {
 
 const landingSection = document.querySelector(".landing-section");
 const header = document.querySelector("header");
+const all = document.querySelector("#fullPage");
 
 const observer = new IntersectionObserver(
   (entires) => {
     const entry = entires[0];
     if (!entry.isIntersecting) {
-      header.style.visibility = "visible";
+      header.style.display = "flex";
     } else {
-      header.style.visibility = "hidden";
+      header.style.display = "none";
     }
   },
   { threshold: 0.05 }
 );
 
 observer.observe(landingSection);
+
+// setTimeout(() => {
+//   all.style.transform = "translateY(-100vh)";
+//   all.style.transition = "transform 1s ease-in-out";
+// }, 4000);
