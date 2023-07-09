@@ -49,7 +49,7 @@ const observer = new IntersectionObserver(
 
 observer.observe(landingSection);
 
-// setTimeout(() => {
-//   all.style.transform = "translateY(-100vh)";
-//   all.style.transition = "transform 1s ease-in-out";
-// }, 4000);
+setTimeout(() => {
+  landingSection.style.transform = "translateY(-100vh)";
+  landingSection.style.transition = "transform 0.7s cubic-bezier(0.5, 0, 0, 1)";
+}, 2000);
