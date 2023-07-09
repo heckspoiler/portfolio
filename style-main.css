@@ -136,10 +136,7 @@ header ul li {
 
 /* Full Page Scrolling */
 
-#fullPage {
-      position: relative;
-      overflow: hidden;
-}
+
 
 /* main sections styling */
 
@@ -292,6 +289,7 @@ header ul li {
 
 .about-h2-carlo-container {
       display: flex;
+
 }
 
 .about-h2-green {
