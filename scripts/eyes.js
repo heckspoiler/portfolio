@@ -1,7 +1,8 @@
 const sections = document.querySelectorAll(".main-section");
 const eyesColor = document.querySelectorAll(".eyes");
+const irisLeft = document.querySelector("div.iris-left");
+const irisRight = document.querySelector("div.iris-right");
 
-console.log(eyesColor);
 // color change of eyes
 
 const observer = new IntersectionObserver(
@@ -34,5 +35,37 @@ const observer = new IntersectionObserver(
   { threshold: 0.7 }
 );
 
-// Start observing all sections
 sections.forEach((section) => observer.observe(section));
+
+// iris movement following the cursor
+
+const moveEye = (tag, mouseX, mouseY) => {
+  //   tag.style.top = `${mouseY}px`;
+  //   tag.style.left = `${mouseX}px`;
+
+  // center of the eye
+
+  const eyeMidX = tag.getBoundingClientRect().left;
+  const eyeMidY = tag.getBoundingClientRect().top;
+
+  // find difference between eye and cursor
+  const diffX = mouseX - eyeMidX;
+  const diffY = mouseY - eyeMidY;
+
+  const angle = Math.atan2(diffY, diffX);
+
+  // capped version, based on the angle
+
+  const cappedX = 3 * Math.cos(angle);
+  const cappedY = 5 * Math.sin(angle);
+
+  const eyeTag = tag.querySelector("div");
+
+  eyeTag.style.left = `${cappedX}px`;
+  eyeTag.style.top = `${cappedY}px`;
+};
+
+document.addEventListener("mousemove", (event) => {
+  moveEye(irisLeft, event.pageX, event.pageY);
+  moveEye(irisRight, event.pageX, event.pageY);
+});
