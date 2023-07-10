@@ -6,7 +6,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       // Check if the entry is intersecting
-      let delay = 50;
+      let delay = 80;
       const allElements = entry.target.querySelectorAll(
         "h2, h3, p, span, div, a, img, button, svg"
       );
@@ -18,7 +18,7 @@ const observer = new IntersectionObserver(
           setTimeout(() => {
             element.style.opacity = "1";
             element.style.transition =
-              "opacity 0.3s ease-in-out, transform 0.3s cubic-bezier(0.5, 0, 0, 1)";
+              "opacity 0.3s ease-in-out, transform 0.3s ease-in-out";
             element.style.transform = "translateY(0)";
           }, delay * (index + 1) + 250); // Apply the delay based on the index
         });

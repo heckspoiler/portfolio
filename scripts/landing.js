@@ -1,6 +1,13 @@
 const paragraphContainer = document.querySelectorAll(
   ".landing-section-para-container"
 );
+const landingSection = document.querySelector(".landing-section");
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+const eyes = document.querySelectorAll(".eyes");
+const heart = document.querySelector(".landing-heart");
+const clickMe = document.querySelector(".click-me-h2");
+const aboutSection = document.querySelector(".about-section");
 
 // random color changes on hover for paragraph container & display image on hover for paragraph container
 
@@ -31,12 +38,6 @@ paragraphContainer.forEach((container) => {
 
 // if landing section is in viewport, the header shouldn't be visible
 
-const landingSection = document.querySelector(".landing-section");
-const header = document.querySelector("header");
-const all = document.querySelector("#fullPage");
-const body = document.querySelector("body");
-const eyes = document.querySelectorAll(".eyes");
-
 const observer = new IntersectionObserver(
   (entires) => {
     const entry = entires[0];
@@ -59,7 +60,20 @@ const observer = new IntersectionObserver(
 
 observer.observe(landingSection);
 
-setTimeout(() => {
+// heart pop up and button for going down
+
+heart.addEventListener("click", () => {
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
-}, 5000);
+  aboutSection.style.transform = "translateY(0)";
+  aboutSection.style.transition =
+    "transform 1s cubic-bezier(0.5, 0, 0, 1) 0.1s";
+});
+
+heart.addEventListener("mouseenter", () => {
+  clickMe.style.visibility = "visible";
+});
+
+heart.addEventListener("mouseleave", () => {
+  clickMe.style.visibility = "hidden";
+});

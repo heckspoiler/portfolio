@@ -101,6 +101,7 @@ header {
       width: 5vw;
       height: 15vh;
       margin-top: 2vh;
+      margin-right: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -262,6 +263,72 @@ div.iris div {
       scale: 0.2;
 }
 
+.landing-heart {
+      -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+      animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.landing-heart:hover {
+      cursor: pointer;
+}
+
+.click-me-h2 {
+      position: absolute;
+      color: white;
+      border: none !important;
+      top: 0;
+      left: 0;
+      margin-left: calc(12rem + 56vw);
+      margin-top: 75vh;
+      transform: rotate(-22deg);
+      visibility: hidden;
+}
+
+.click-me-h2 h2 {
+      font-size: 1.8rem;
+      font-family: "Neue Machina Medium";
+}
+
+@-webkit-keyframes heartbeat {
+      from {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+      }
+
+      10% {
+            -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+      }
+
+      17% {
+            -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+      }
+
+      33% {
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+      }
+
+      45% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+      }
+}
+
+
 .landing-sections:nth-of-type(1) img {
       top: 0;
       border-radius: 80px;
@@ -317,6 +384,7 @@ div.iris div {
 
 .about-section {
       padding: 0 4rem 2rem 4rem;
+      transform: translateY(-100vh);
 }
 
 .about-upper-content-container {
@@ -409,6 +477,7 @@ div.iris div {
 .about-small-text {
       font-family: "Nohemi Regular";
       margin-left: calc(18rem + 50vw);
+      margin-top: -130px;
 }
 
 .about-small-text-emphasize {
