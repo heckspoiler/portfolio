@@ -62,4 +62,4 @@ observer.observe(landingSection);
 setTimeout(() => {
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
-}, 4000);
+}, 5000);
