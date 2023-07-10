@@ -1,5 +1,6 @@
 const body = document.querySelector("body");
 const sections = document.querySelectorAll(".main-section");
+const eyes = document.querySelectorAll(".eyes");
 
 const observer = new IntersectionObserver(
   (entries) => {

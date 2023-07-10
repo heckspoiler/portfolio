@@ -134,8 +134,46 @@ header ul li {
 }
 
 
+/* Eyes styling */
+
+.eyes-container {
+      position: fixed;
+      z-index: 20;
+      left: 0;
+      top: 0;
+      margin-left: calc(20rem + 45vw);
+      width: calc(3rem + 4vw);
+      height: calc(3rem + 4vw);
+      margin-top: 10px;
+}
+
+.eyes-relative {
+      position: relative;
+}
+
+.eyes {
+      height: 3.5rem;
+      width: 2.4rem;
+      border: 1px solid black;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 30px;
+      background-color: white;
+      transition: background-color 0.4s ease-in-out;
+}
+
+.eyes-right {
+      margin-left: 30px;
+}
+
 /* Full Page Scrolling */
 
+#fullPage {
+      height: 100vh;
+      width: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+}
 
 
 /* main sections styling */
@@ -143,7 +181,8 @@ header ul li {
 .main-section {
       height: 100vh;
       width: 100vw;
-
+      position: relative;
+      scroll-snap-align: start;
 }
 
 
