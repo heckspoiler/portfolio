@@ -56,8 +56,8 @@ const moveEye = (tag, mouseX, mouseY) => {
 
   // capped version, based on the angle
 
-  const cappedX = 3 * Math.cos(angle);
-  const cappedY = 5 * Math.sin(angle);
+  const cappedX = 8 * Math.cos(angle);
+  const cappedY = 10 * Math.sin(angle);
 
   const eyeTag = tag.querySelector("div");
 

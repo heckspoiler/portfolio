@@ -35,6 +35,7 @@ const landingSection = document.querySelector(".landing-section");
 const header = document.querySelector("header");
 const all = document.querySelector("#fullPage");
 const body = document.querySelector("body");
+const eyes = document.querySelectorAll(".eyes");
 
 const observer = new IntersectionObserver(
   (entires) => {
@@ -42,9 +43,15 @@ const observer = new IntersectionObserver(
     if (!entry.isIntersecting) {
       header.style.display = "flex";
       body.style.overflow = "auto";
+      eyes.forEach((eye) => {
+        eye.style.visibility = "visible";
+      });
     } else {
       header.style.display = "none";
       body.style.overflow = "hidden";
+      eyes.forEach((eye) => {
+        eye.style.visibility = "hidden";
+      });
     }
   },
   { threshold: 0.05 }
@@ -54,5 +61,5 @@ observer.observe(landingSection);
 
 setTimeout(() => {
   landingSection.style.transform = "translateY(-100vh)";
-  landingSection.style.transition = "transform 0.7s cubic-bezier(0.5, 0, 0, 1)";
-}, 100);
+  landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
+}, 4000);
