@@ -381,11 +381,12 @@ body::-webkit-scrollbar {
 }
 
 .landing-sections:nth-of-type(2) img {
+      position: absolute;
       top: 0;
       border-radius: 80px;
       scale: 0.1;
       margin-top: -85vh;
-      margin-left: 30vw;
+      margin-left: calc(30vw - 2rem);
       border: 1px solid black;
       transform: rotate(10deg);
 
@@ -538,5 +539,24 @@ body::-webkit-scrollbar {
       left: 0;
       margin-left: calc(25rem + 40vw);
       margin-top: calc(10rem + 10vw);
+      z-index: -2;
+}
+
+.cover-block {
+      position: absolute;
+      height: 20rem;
+      width: 20rem;
+      top: 0;
+      left: 0;
+      margin-left: calc(25rem + 40vw);
+      margin-top: calc(10rem + 10vw);
       z-index: -1;
+      /* background-color: #A4FFDE; */
+      border: 1px solid black;
+      opacity: 1 !important;
+      transition: transform 0.3s ease-in-out;
+}
+
+.cover-block--hidden {
+      opacity: 0;
 }
