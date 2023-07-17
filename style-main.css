@@ -4,6 +4,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
 }
 
 svg:hover {
@@ -261,8 +262,6 @@ body::-webkit-scrollbar {
       z-index: 10;
       top: 0;
       left: 0;
-
-
 }
 
 .landing-sections {
@@ -296,12 +295,7 @@ body::-webkit-scrollbar {
       line-height: 2rem;
 }
 
-.landing-sections img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      scale: 0.2;
-}
+
 
 .landing-heart {
       -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -327,7 +321,7 @@ body::-webkit-scrollbar {
 }
 
 .click-me-h2 h2 {
-      font-size: 1.8rem;
+      font-size: calc(0.7rem + 1vw);
       font-family: "Neue Machina Medium";
 }
 
@@ -368,6 +362,13 @@ body::-webkit-scrollbar {
             -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
       }
+}
+
+.landing-sections img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      scale: 0.1;
 }
 
 
@@ -487,7 +488,7 @@ body::-webkit-scrollbar {
 }
 
 .arrow-about {
-      margin-left: calc(33rem + 8vw);
+      margin-left: calc(15rem + 25vw);
       scale: 0.6;
       margin-top: -1rem;
 }
@@ -521,7 +522,7 @@ body::-webkit-scrollbar {
 .about-small-text {
       font-family: "Nohemi Regular";
       margin-left: calc(18rem + 50vw);
-      margin-top: -130px;
+      margin-top: -100px;
 }
 
 .about-small-text-emphasize {
@@ -537,12 +538,12 @@ body::-webkit-scrollbar {
       position: absolute;
       top: 0;
       left: 0;
-      margin-left: calc(25rem + 40vw);
-      margin-top: calc(10rem + 10vw);
+      margin-left: calc(25rem + 44vw);
+      margin-top: calc(15rem + 5vw);
       z-index: -2;
 }
 
-.cover-block {
+/* .cover-block {
       position: absolute;
       height: 20rem;
       width: 20rem;
@@ -551,11 +552,11 @@ body::-webkit-scrollbar {
       margin-left: calc(25rem + 40vw);
       margin-top: calc(10rem + 10vw);
       z-index: -1;
-      /* background-color: #A4FFDE; */
-      border: 1px solid black;
-      opacity: 1 !important;
-      transition: transform 0.3s ease-in-out;
-}
+      background-color: #A4FFDE;
+border: 1px solid black;
+opacity: 1 !important;
+transition: transform 0.3s ease-in-out;
+} */
 
 .cover-block--hidden {
       opacity: 0;
