@@ -6,7 +6,28 @@
       box-sizing: border-box;
 }
 
+svg:hover {
+      cursor: none !important;
+}
 
+.cursor {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: black;
+      z-index: 100;
+      transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.hovered {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: rgb(136, 136, 220);
+
+}
 
 li {
       list-style: none;
@@ -24,6 +45,7 @@ a:hover {
 body {
       background-color: #8EB4FD;
       transition: background-color 0.3s ease-in-out;
+      cursor: none;
 
 }
 
@@ -196,6 +218,10 @@ div.iris div {
       width: 100%;
       overflow-y: auto;
       scroll-snap-type: y mandatory;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
 }
 
 
@@ -206,6 +232,19 @@ div.iris div {
       width: 100vw;
       position: relative;
       scroll-snap-align: start;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+
+}
+
+body::-webkit-scrollbar {
+      display: none;
+}
+
+#fullPage::-webkit-scrollbar {
+      display: none;
 }
 
 
@@ -213,7 +252,7 @@ div.iris div {
 
 .landing-section {
       position: absolute;
-      background-color: #8EB4FD;
+      background-color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -222,6 +261,7 @@ div.iris div {
       z-index: 10;
       top: 0;
       left: 0;
+
 
 }
 
@@ -274,7 +314,7 @@ div.iris div {
 
 .click-me-h2 {
       position: absolute;
-      color: white;
+      color: black;
       border: none !important;
       top: 0;
       left: 0;
