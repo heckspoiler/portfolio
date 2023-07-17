@@ -531,7 +531,14 @@ body::-webkit-scrollbar {
       /* or overline or line-through */
       text-decoration-style: dotted;
       text-decoration-thickness: 2px;
+      color: black;
+      transition: color 0.2s ease-in-out, text-decoration-style 0.3s ease-in-out !important;
 
+}
+
+.about-small-text-emphasize:hover {
+      color: #F46265;
+      text-decoration-style: dashed;
 }
 
 .about-wavy-line {
@@ -543,7 +550,7 @@ body::-webkit-scrollbar {
       z-index: -2;
 }
 
-/* .cover-block {
+.cover-block {
       position: absolute;
       height: 20rem;
       width: 20rem;
@@ -553,11 +560,8 @@ body::-webkit-scrollbar {
       margin-top: calc(10rem + 10vw);
       z-index: -1;
       background-color: #A4FFDE;
-border: 1px solid black;
-opacity: 1 !important;
-transition: transform 0.3s ease-in-out;
-} */
-
-.cover-block--hidden {
-      opacity: 0;
+      border-radius: 140px;
+      transform: rotate(100deg) !important;
+      opacity: 1 !important;
+      transition: margin-left 18s cubic-bezier(0.175, 0.885, 0.32, 1.275), margin-top 18s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }

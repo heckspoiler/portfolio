@@ -1,7 +1,6 @@
 const sections = document.querySelectorAll(
   ".about-section, .project-section, .skills-section, .contact-section "
 );
-const coverBlock = document.querySelector(".cover-block");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -35,9 +34,3 @@ const observer = new IntersectionObserver(
 
 // Start observing all sections
 sections.forEach((section) => observer.observe(section));
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    coverBlock.classList.add("cover-block--hidden");
-  }, 1000);
-});
