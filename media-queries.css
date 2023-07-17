@@ -1,11 +1,6 @@
 @media screen and (max-width: 992px) {
 
       /* ---------- landing section ------------ */
-      .landing-section {
-
-            background-color: rgb(250, 215, 215);
-      }
-
       .landing-sections {
 
             padding: 1.2vw 8vw 1.2vw 8vw;
