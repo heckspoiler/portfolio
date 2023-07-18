@@ -314,7 +314,7 @@ body::-webkit-scrollbar {
       left: 0;
       margin-left: calc(12rem + 56vw);
       margin-top: calc(7.5rem + 50vh);
-      transform: rotate(-22deg);
+      transform: rotate(-22deg) !important;
       visibility: hidden;
       background-color: white;
 
