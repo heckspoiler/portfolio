@@ -1,6 +1,4 @@
-const sections = document.querySelectorAll(
-  ".about-section, .project-section, .skills-section, .contact-section "
-);
+const sections = document.querySelectorAll(".landing-section, .about-section");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -8,7 +6,7 @@ const observer = new IntersectionObserver(
       // Check if the entry is intersecting
       let delay = 80;
       const allElements = entry.target.querySelectorAll(
-        "h2, h3, p, span, div, a, img, button, svg"
+        "h2, h3, h4, p, span, div, a, img, button, svg"
       );
 
       if (entry.isIntersecting) {
