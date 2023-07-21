@@ -6,14 +6,14 @@ const cursor = document.querySelector(".cursor");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      // Check if the entry is intersecting
+      // Check if the entry is intersecting and if it is, change background color
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
         if (sectionId == "about") {
           body.style.backgroundColor = "#A4FFDE";
           cursor.style.backgroundColor = "#31ABFD";
         } else if (sectionId == "projects") {
-          body.style.backgroundColor = "#FAF126";
+          body.style.backgroundColor = "#71FCF4";
           cursor.style.backgroundColor = "#FC1616";
         } else if (sectionId == "landing") {
           body.style.backgroundColor = "#A4FFDE";

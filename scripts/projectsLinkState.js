@@ -2,9 +2,7 @@ const projectLinks = document.querySelectorAll(
   ".projects_subsection-left-list li a"
 );
 
-const projectLinksBefore = document.querySelectorAll(
-  ".projects_subsection-left-list li a::before"
-);
+// changing position and color of link and before element
 
 const linkStateChange = (clickedLink) => {
   projectLinks.forEach((link) => {
