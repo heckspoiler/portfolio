@@ -46,7 +46,7 @@ a:hover {
 body {
       background-color: #8EB4FD;
       transition: background-color 0.3s ease-in-out;
-      cursor: none;
+      cursor: default;
 
 }
 
@@ -262,6 +262,7 @@ body::-webkit-scrollbar {
       z-index: 10;
       top: 0;
       left: 0;
+      visibility: hidden;
 }
 
 .landing-sections {
@@ -429,7 +430,7 @@ body::-webkit-scrollbar {
 
 .about-section {
       padding: 0 4rem 2rem 4rem;
-      transform: translateY(-100vh);
+      /* transform: translateY(-100vh); */
 }
 
 .about-upper-content-container {
@@ -519,10 +520,22 @@ body::-webkit-scrollbar {
       visibility: visible !important;
 }
 
+.about__design-container {
+      position: relative;
+      height: 12rem;
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: -20px;
+      margin-left: calc(18rem + 45vw);
+      margin-top: calc(-1*(2rem + 15vw));
+
+}
+
 .about-small-text {
       font-family: "Nohemi Regular";
-      margin-left: calc(18rem + 50vw);
-      margin-top: -100px;
 }
 
 .about-small-text-emphasize {
@@ -542,26 +555,6 @@ body::-webkit-scrollbar {
 }
 
 .about-wavy-line {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-left: calc(25rem + 44vw);
-      margin-top: calc(15rem + 5vw);
       z-index: -2;
-}
-
-.cover-block {
-      position: absolute;
-      height: 20rem;
-      width: 20rem;
-      top: 0;
-      left: 0;
-      margin-left: calc(25rem + 40vw);
-      margin-top: calc(10rem + 10vw);
-      z-index: -1;
-      background-color: #A4FFDE;
-      border-radius: 140px;
-      transform: rotate(100deg) !important;
-      opacity: 1 !important;
-      transition: margin-left 18s cubic-bezier(0.175, 0.885, 0.32, 1.275), margin-top 18s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+      scale: 0.7;
 }
