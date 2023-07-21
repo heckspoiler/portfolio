@@ -1,5 +1,23 @@
 @media screen and (max-width: 992px) {
 
+
+      /* navbar side */
+
+      header ul {
+            gap: 7px;
+      }
+
+      header ul li {
+            height: 12px;
+            width: 12px;
+      }
+
+      #current-section {
+
+            font-size: 0.6rem;
+
+      }
+
       /* ---------- landing section ------------ */
       .landing-sections {
 
