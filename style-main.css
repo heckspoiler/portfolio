@@ -603,11 +603,11 @@ body::-webkit-scrollbar {
 }
 
 .projects_subsection-left-list li {
+      position: relative;
       font-family: "Nohemi Semibold";
       font-size: calc(1rem + 1.5vw);
       margin-left: 10px;
       margin-top: 10px;
-      -webkit-text-stroke: 1px black;
       margin-left: 20px;
       border-bottom: 1px solid black;
 
@@ -619,6 +619,8 @@ body::-webkit-scrollbar {
       color: transparent;
       text-transform: uppercase;
       text-align: center;
+      transition: color 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+
 
 }
 
@@ -628,4 +630,10 @@ body::-webkit-scrollbar {
       scale: 0.8;
       margin-left: -20px;
       margin-top: -14px;
+      transform: translateX(-50vw);
+}
+
+.link-active {
+      color: black !important;
+      margin-left: 10vw;
 }
