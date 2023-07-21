@@ -563,11 +563,10 @@ body::-webkit-scrollbar {
 
 .projects-section h2 {
       font-family: "Nohemi Semibold";
-      font-size: calc(3rem + 8vw);
+      font-size: calc(2rem + 6vw);
       margin-left: 10px;
       margin-top: 10px;
-      -webkit-text-stroke: 1px black;
-      color: transparent;
+      color: black;
 }
 
 .projects_container {
