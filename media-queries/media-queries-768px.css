@@ -1,6 +1,6 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
 
-      /* ---------- landing section ------------ */
+      /* ---------- landing section ------------       STILL HAS TO BE DONE!!!!!!*/
       .landing-sections {
 
             padding: 1.2vw 8vw 1.2vw 8vw;
@@ -120,16 +120,6 @@
 
       }
 
-      /* .landing-sections:nth-of-type(2) img {
-            top: 0;
-            border-radius: 80px;
-            scale: 0.1;
-            margin-top: -85vh;
-            margin-left: 28vw;
-            transform: rotate(10deg);
-
-      } */
-
 
       .landing-sections:nth-of-type(3) img {
             top: 0;
@@ -154,23 +144,25 @@
 
       .about-section h2 {
             font-size: calc(3rem + 7.5vw);
+            color: blue;
       }
 
       .about-section {
             padding: 4rem 4rem 1rem 4rem;
-            transform: translateY(-100vh);
+            /* transform: translateY(-100vh); */
             /* background-color: aliceblue !important; */
       }
 
       .about-upper-content-container {
 
             width: 80%;
-            gap: calc(0.5rem + 2vw);
+            gap: 1vw;
+
 
       }
 
       .about-waves-upper {
-            scale: 0.8;
+            scale: 0.7;
       }
 
 
@@ -192,12 +184,13 @@
 
       .arrow-about {
             margin-left: calc(15rem + 25vw);
-            scale: 0.6;
+            scale: 0.4;
             margin-top: -1rem;
       }
 
 
       .about-description {
+            margin-top: -25px;
             margin-left: calc(4rem + 5vw);
             font-size: 1.5rem;
       }
@@ -208,8 +201,8 @@
             margin-left: 15vw;
             left: 0;
             top: 0;
-            margin-top: calc(8rem + 25vw);
-            scale: 0.8;
+            margin-top: calc(7rem + 25vw);
+            scale: 0.7;
 
       }
 
@@ -219,7 +212,6 @@
 
       .about-small-text {
 
-            margin-left: calc(18rem + 50vw);
             font-size: 0.8rem;
 
       }
@@ -233,30 +225,20 @@
 
       .about-wavy-line {
 
-            margin-left: calc(18rem + 45vw);
-            margin-top: calc(11rem + 20vw);
-            scale: 0.7;
+
+            scale: 0.65;
       }
 
-      /* .cover-block {
-            position: absolute;
-            height: 20rem;
-            width: 20rem;
-            top: 0;
-            left: 0;
-            margin-left: calc(25rem + 40vw);
-            margin-top: calc(10rem + 10vw);
-            z-index: -1;
-            background-color: #A4FFDE;
-            border: 1px solid black;
-            opacity: 1 !important;
-            transition: transform 0.3s ease-in-out;
+      .about__design-container {
+
+            height: 9rem;
+            width: 12rem;
+            display: flex;
+            gap: -20px;
+            margin-left: calc(12rem + 45vw);
+            margin-top: calc(-1*(2.5rem + 15vw));
+
       }
-
-      .cover-block--hidden {
-            opacity: 0;
-      } */
-
 
       /* Eyes styling */
 
@@ -266,8 +248,8 @@
             left: 0;
             top: 0;
             margin-left: calc(5rem + 65vw);
-            width: calc(3rem + 4vw);
-            height: calc(3rem + 4vw);
+            width: calc(2rem + 4vw);
+            height: calc(2rem + 4vw);
             margin-top: 10px;
       }
 
@@ -276,8 +258,8 @@
       }
 
       .eyes {
-            height: 3.5rem;
-            width: 2.5rem;
+            height: 3rem;
+            width: 2rem;
             border: 1px solid black;
             border-radius: 50%;
             position: absolute;
@@ -288,7 +270,7 @@
       }
 
       .eyes-right {
-            margin-left: 30px;
+            margin-left: 25px;
       }
 
       div.iris {
@@ -303,8 +285,8 @@
 
       div.iris div {
             position: relative;
-            width: 20px;
-            height: 20px;
+            width: 17px;
+            height: 17px;
             border: 1px solid black;
             background-color: #052837;
             border-radius: 50%;
