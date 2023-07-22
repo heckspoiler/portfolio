@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(
           });
         } else if (sectionId == "projects") {
           eyesColor.forEach((eyecolor) => {
-            eyecolor.style.backgroundColor = "#8EFDA0";
+            eyecolor.style.backgroundColor = "#FFEA29";
           });
           console.log("about");
         } else if (sectionId == "skills") {
