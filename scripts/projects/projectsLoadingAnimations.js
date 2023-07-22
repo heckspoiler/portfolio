@@ -19,10 +19,16 @@ const observer = new IntersectionObserver(
             }, timeout * (index + 1));
           });
         }, 200);
+        setTimeout(() => {
+          projectsPreview.classList.add("projects-preview-loaded");
+        }, 1000);
+      } else {
+        title.classList.remove("title-loaded");
+        listItems.forEach((item) => {
+          item.classList.remove("list-item-loaded");
+        });
+        projectsPreview.classList.remove("projects-preview-loaded");
       }
-      setTimeout(() => {
-        projectsPreview.classList.add("projects-preview-loaded");
-      }, 1000);
     });
   },
   { threshold: 0.2 }
