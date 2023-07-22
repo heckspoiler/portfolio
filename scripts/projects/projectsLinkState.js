@@ -11,6 +11,7 @@ const linkStateChange = (clickedLink) => {
     }
   });
   clickedLink.classList.add("link-active");
+  clickedLink.classList.add("watched");
 };
 
 projectLinks.forEach((link) => {

@@ -624,13 +624,20 @@ body::-webkit-scrollbar {
 
 }
 
-.projects_subsection-left-list li::after {
+
+.watched::after {
+      visibility: visible;
       position: absolute;
       content: 'watched';
       font-style: italic;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
       margin-left: 10px;
-      display: none;
+      color: black;
+      text-transform: lowercase;
+      -webkit-text-stroke: none;
+      letter-spacing: 1px;
+      opacity: 0.7;
+      font-family: "Nohemi Regular"
 }
 
 .projects_subsection-left-list li a::before {
@@ -712,7 +719,7 @@ body::-webkit-scrollbar {
       background-position: center;
       display: flex;
       overflow: hidden;
-      border: 1px solid black;
+
 }
 
 .projects__project-preview img {
