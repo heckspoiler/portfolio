@@ -739,7 +739,7 @@ body::-webkit-scrollbar {
 
 .projects__project-preview {
       background-image: url("./assets/images/projects/projects-placeholder.png");
-      background-size: 80%;
+      background-size: 40%;
       background-repeat: no-repeat;
       background-position: center;
       display: flex;
