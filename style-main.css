@@ -699,5 +699,5 @@ body::-webkit-scrollbar {
       background-image: url("./assets/images/projects/projects-placeholder.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      background-position-y: center;
+      background-position: center;
 }
