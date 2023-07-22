@@ -684,13 +684,14 @@ body::-webkit-scrollbar {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 5vw;
 }
 
 .projects__project-preview {
       height: 100%;
-      width: 80%;
+      width: 100%;
       opacity: 0;
-      transition: opacity 1s ease-in;
+      transition: opacity 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .projects-preview-loaded {
@@ -749,7 +750,7 @@ body::-webkit-scrollbar {
 }
 
 .projects__project-preview img {
-      scale: 0.8;
+      scale: 0.85;
       height: 100%;
-      width: 100%;
+      width: 90%;
 }

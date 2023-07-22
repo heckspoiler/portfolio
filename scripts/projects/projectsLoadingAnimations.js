@@ -21,11 +21,12 @@ const observer = new IntersectionObserver(
         }, 200);
         setTimeout(() => {
           projectsPreview.classList.add("projects-preview-loaded");
-        }, 1000);
+        }, 800);
       } else {
         title.classList.remove("title-loaded");
         listItems.forEach((item) => {
           item.classList.remove("list-item-loaded");
+          projectsPreview.style.backgroundImage = `url("./assets/images/projects/projects-placeholder.png")`;
         });
         projectsPreview.classList.remove("projects-preview-loaded");
       }
