@@ -2,8 +2,6 @@ const sections = document.querySelectorAll(".main-section");
 const sectionIndicator = document.querySelectorAll(".list-object");
 const currentSection = document.querySelector("#current-section");
 
-console.log(sectionIndicator);
-
 const config = {
   about: () => {
     sectionIndicator[0].style.backgroundColor = "#31ABFD";

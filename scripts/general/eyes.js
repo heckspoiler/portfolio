@@ -18,7 +18,6 @@ const observer = new IntersectionObserver(
           eyesColor.forEach((eyecolor) => {
             eyecolor.style.backgroundColor = "#FFEA29";
           });
-          console.log("about");
         } else if (sectionId == "skills") {
           eyesColor.forEach((eyecolor) => {
             eyecolor.style.backgroundColor = "#FAF126";
