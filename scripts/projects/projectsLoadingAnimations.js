@@ -1,2 +1,31 @@
+const projectsSection = document.querySelector("#projects");
 const title = document.querySelector("#projects h2");
-console.log("hello from projectsLoading: ", title);
+const listItems = document.querySelectorAll(
+  ".projects_subsection-left-listobject"
+);
+const projectsPreview = document.querySelector(".projects__project-preview");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        title.classList.add("title-loaded");
+
+        const timeout = 100;
+        setTimeout(() => {
+          listItems.forEach((item, index) => {
+            setTimeout(() => {
+              item.classList.add("list-item-loaded");
+            }, timeout * (index + 1));
+          });
+        }, 200);
+      }
+      setTimeout(() => {
+        projectsPreview.classList.add("projects-preview-loaded");
+      }, 1000);
+    });
+  },
+  { threshold: 0.2 }
+);
+
+observer.observe(projectsSection);

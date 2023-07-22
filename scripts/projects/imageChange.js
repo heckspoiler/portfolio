@@ -8,6 +8,6 @@ projectLinks.forEach((projectLink) => {
     projectsPreview.style.backgroundImage = "none";
     const dataProject = e.currentTarget.dataset.project;
 
-    projectsPreview.innerHTML = `<img src='./assets/images/projects/testimages/${dataProject}.jpeg' alt='Image of Project ${dataProject}' />`;
+    projectsPreview.innerHTML = `<img src='./assets/images/projects/testimages/${dataProject}.jpg' alt='Image of Project ${dataProject}' />`;
   });
 });

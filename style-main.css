@@ -564,9 +564,16 @@ body::-webkit-scrollbar {
 .projects-section h2 {
       font-family: "Nohemi Semibold";
       font-size: calc(2rem + 6vw);
-      margin-left: 10px;
       margin-top: 10px;
       color: black;
+      margin-left: -10vw;
+      opacity: 0;
+      transition: margin-left 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.title-loaded {
+      margin-left: 1vw !important;
+      opacity: 1 !important;
 }
 
 .projects_container {
@@ -598,18 +605,29 @@ body::-webkit-scrollbar {
       flex-direction: column;
       width: 100%;
       height: 100%;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      padding: 40px 0;
 }
 
-.projects_subsection-left-list li {
+.projects_subsection-left-listobject {
       position: relative;
       font-family: "Nohemi Semibold";
       font-size: calc(1rem + 1.5vw);
       margin-left: 10px;
-      margin-top: 10px;
+      margin-top: 20px;
       margin-left: 20px;
       border-bottom: 1px solid black;
+      transform: scale(0.6) rotate(25deg);
+      width: 60%;
+      opacity: 0;
+      transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+}
+
+.list-item-loaded {
+      transform: scale(1) rotate(0);
+      width: 100%;
+      opacity: 1;
 }
 
 
@@ -671,7 +689,13 @@ body::-webkit-scrollbar {
 .projects__project-preview {
       height: 100%;
       width: 80%;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+}
 
+.projects-preview-loaded {
+
+      opacity: 1;
 }
 
 .projects__project-footnotes {
@@ -714,11 +738,13 @@ body::-webkit-scrollbar {
 
 .projects__project-preview {
       background-image: url("./assets/images/projects/projects-placeholder.png");
-      background-size: 100%;
+      background-size: 80%;
       background-repeat: no-repeat;
       background-position: center;
       display: flex;
       overflow: hidden;
+      height: 90%;
+      width: 100%;
 
 }
 

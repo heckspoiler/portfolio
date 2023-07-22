@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(
           body.style.backgroundColor = "#A4FFDE";
           cursor.style.backgroundColor = "#31ABFD";
         } else if (sectionId == "projects") {
-          body.style.backgroundColor = "#FFEA29";
+          body.style.background = "#FFEA29";
           cursor.style.backgroundColor = "#FC1616";
         } else if (sectionId == "landing") {
           body.style.backgroundColor = "#A4FFDE";
