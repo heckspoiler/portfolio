@@ -1,45 +1,15 @@
+import projectsArray from "./projectsArray.js";
+console.log(projectsArray);
+
 const projectsPreview = document.querySelector(".projects__project-preview");
 const projectLinks = document.querySelectorAll(
   ".projects_subsection-left-listobject a"
 );
-
-const projectsImage = document.querySelector(".projects__project-preview img");
-
-//array of objects containing project data
-const projectArray = [
-  {
-    alt: "sinecloud",
-    imgUrl: "./assets/images/projects/testimages/sinecloud.jpg",
-    videoUrl: "",
-    link: "www.google.ch",
-  },
-  {
-    alt: "station",
-    imgUrl: "./assets/images/projects/testimages/station.jpg",
-    videoUrl: "",
-    link: "",
-  },
-  {
-    alt: "shopify",
-    imgUrl: "./assets/images/projects/testimages/shopify.jpg",
-    videoUrl: "",
-    link: "",
-  },
-  {
-    alt: "bookclub",
-    imgUrl: "./assets/images/projects/testimages/bookclub.jpg",
-    videoUrl: "",
-    link: "",
-  },
-  {
-    alt: "milkymood",
-    imgUrl: "./assets/images/projects/testimages/milkymood.jpg",
-    videoUrl: "",
-    link: "",
-  },
-];
+const previewAnchor = document.querySelector(".projects__project-preview a");
+// array of objects containing project data
 
 let videoElement = null;
+let projectsImage = projectsPreview.querySelector("img");
 
 projectLinks.forEach((projectLink) => {
   projectLink.addEventListener("click", (e) => {
@@ -51,6 +21,13 @@ projectLinks.forEach((projectLink) => {
 
     projectsPreview.style.backgroundImage = "none";
     const dataProject = e.currentTarget.dataset.project;
+
+    if (!projectsImage) {
+      // if img does not exist, create it
+      projectsImage = document.createElement("img");
+      previewAnchor.appendChild(projectsImage);
+    }
+
     projectsImage.setAttribute(
       "src",
       `./assets/images/projects/testimages/${dataProject}.jpg`
@@ -61,7 +38,7 @@ projectLinks.forEach((projectLink) => {
 
 projectsPreview.addEventListener("mouseenter", (e) => {
   // add video element if it doesn't exist
-  projectArray.forEach((project) => {
+  projectsArray.forEach((project) => {
     if (projectsImage.alt === `Image of Project ${project.alt}`) {
       if (!videoElement) {
         videoElement = document.createElement("video");
@@ -70,7 +47,7 @@ projectsPreview.addEventListener("mouseenter", (e) => {
         videoElement.alt = `Video of Project ${project.alt}`;
         videoElement.autoplay = true;
         videoElement.loop = true;
-        projectsPreview.appendChild(videoElement);
+        previewAnchor.appendChild(videoElement);
         setTimeout(() => {
           videoElement.style.opacity = 1;
         }, 1000);
@@ -95,17 +72,14 @@ const observer = new IntersectionObserver(
           videoElement.remove();
           videoElement = null;
         }
-
-        // Reset the background and image attributes
-        projectsPreview.style.backgroundImage = "none";
-        projectsImage.setAttribute("src", "_blank");
-        projectsImage.setAttribute("alt", "_blank");
+        if (projectsImage) {
+          projectsImage.remove();
+          projectsImage = null;
+        }
       }
     });
   },
   { threshold: 0.2 }
 );
-
-observer.observe(projectsPreview);
 
 observer.observe(projectsPreview);
