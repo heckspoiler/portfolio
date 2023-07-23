@@ -11,7 +11,7 @@ const projectArray = [
     alt: "sinecloud",
     imgUrl: "./assets/images/projects/testimages/sinecloud.jpg",
     videoUrl: "",
-    link: "",
+    link: "www.google.ch",
   },
   {
     alt: "station",
