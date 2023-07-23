@@ -78,3 +78,5 @@ heart.addEventListener("mouseenter", () => {
 heart.addEventListener("mouseleave", () => {
   clickMe.style.visibility = "hidden";
 });
+
+console.log(landingSection);

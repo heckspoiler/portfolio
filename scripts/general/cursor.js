@@ -18,4 +18,23 @@ const moveCursor = (e) => {
   cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 };
 
+const growCursor = () => {
+  cursor.style.width = "30px";
+  cursor.style.height = "30px";
+  cursor.style.backgroundColor = "red";
+};
+
+const resetCursor = () => {
+  cursor.style.width = "15px";
+  cursor.style.height = "15px";
+  cursor.style.backgroundColor = "blue";
+};
+
+const imagesAndLinks = document.querySelectorAll("img, a");
+
+imagesAndLinks.forEach((element) => {
+  element.addEventListener("mouseenter", growCursor);
+  element.addEventListener("mouseleave", resetCursor);
+});
+
 window.addEventListener("mousemove", moveCursor);
