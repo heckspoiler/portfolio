@@ -829,21 +829,20 @@ body::-webkit-scrollbar {
 }
 
 .gameboy__buttons-ab {
-      height: 63px;
-      width: 20px;
+      gap: 5px;
       position: absolute;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-direction: column;
-      top: 62%;
-      left: 62%;
-      transform: rotate(48deg);
+      top: 58%;
+      left: 65%;
+      transform: rotate(63deg);
 }
 
 .button-ab {
-      height: 28px;
+      height: 30px;
       border-radius: 50%;
-      width: 28px;
+      width: 30px;
       border: 3px solid #FAF126;
       background-color: transparent;
       box-shadow: 2px 1px rgba(250, 241, 38, 0.5);
@@ -851,7 +850,7 @@ body::-webkit-scrollbar {
 }
 
 .button-ab p {
-      transform: rotate(-48deg);
+      transform: rotate(-63deg);
       font-family: Arial, Helvetica, sans-serif;
       color: #FAF126;
       font-size: 0.9rem;
@@ -869,4 +868,41 @@ body::-webkit-scrollbar {
       border: 1px solid #FAF126;
 }
 
-.
+.gameboy__buttons-start-select {
+      position: absolute;
+      width: 40%;
+      height: 20px;
+      display: flex;
+      gap: 2px;
+      justify-content: space-evenly;
+      top: 88%;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: flex-end;
+}
+
+.button-start-select {
+      height: 55%;
+      width: 45%;
+      border: 3px solid #FAF126;
+      border-radius: 30px;
+}
+
+.gameboy__speakers-container {
+      position: absolute;
+      height: 50px;
+      width: 35px;
+      top: 80%;
+      left: 81.2%;
+      transform: rotate(-45deg);
+      display: flex;
+      justify-content: space-around;
+
+}
+
+.gameboy__speakers-container div {
+      height: 60%;
+      width: 17%;
+      border: 2px solid #FAF126;
+      border-radius: 30px;
+}

@@ -18,16 +18,18 @@ const moveCursor = (e) => {
   cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 };
 
+// FUNCTION HAS STILL TO BE FINISHED!!!!!! ADAPT COLORS TO SECTIONS
+
 const growCursor = () => {
-  cursor.style.width = "30px";
-  cursor.style.height = "30px";
-  cursor.style.backgroundColor = "red";
+  cursor.style.width = "22px";
+  cursor.style.height = "22px";
+  cursor.style.backgroundColor = "green";
 };
 
 const resetCursor = () => {
   cursor.style.width = "15px";
   cursor.style.height = "15px";
-  cursor.style.backgroundColor = "blue";
+  cursor.style.backgroundColor = "inital";
 };
 
 const imagesAndLinks = document.querySelectorAll("img, a");
