@@ -49,7 +49,7 @@ projectsPreview.addEventListener("mouseenter", (e) => {
         previewAnchor.appendChild(videoElement);
         setTimeout(() => {
           videoElement.style.opacity = 1;
-        }, 1000);
+        }, 200);
       }
     }
   });

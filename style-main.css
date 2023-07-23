@@ -690,7 +690,7 @@ body::-webkit-scrollbar {
       justify-content: center;
       align-items: center;
       margin-left: 5vw;
-      margin-top: 8vh;
+      margin-top: 5vh;
 
 }
 
@@ -784,6 +784,9 @@ body::-webkit-scrollbar {
 
 /* -------------------- skills section --------------------------- */
 
+
+/* gameboy */
+
 .skills-section__gameboy-container {
       position: absolute;
       top: 0;
@@ -800,7 +803,7 @@ body::-webkit-scrollbar {
       height: 100%;
       width: 100%;
       border: 5px solid #FAF126;
-      border-radius: 20px;
+      border-radius: 15px;
       border-bottom-right-radius: 55px;
 }
 
@@ -905,4 +908,72 @@ body::-webkit-scrollbar {
       width: 17%;
       border: 2px solid #FAF126;
       border-radius: 30px;
+}
+
+.gameboy__cross {
+      height: 2.2em;
+      width: 2.2em;
+      position: absolute;
+      top: 68%;
+      left: 13%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cross-element {
+      height: 100%;
+      width: 100%;
+}
+
+.cross-element:nth-of-type(2) {
+
+      background-color: #FAF126;
+      opacity: 0.9;
+
+}
+
+.cross-element:nth-of-type(4) {
+      background-color: #FAF126;
+      opacity: 0.9;
+}
+
+.cross-element:nth-of-type(6) {
+      background-color: #FAF126;
+      opacity: 0.9;
+}
+
+.cross-element:nth-of-type(8) {
+      background-color: #FAF126;
+      opacity: 0.9;
+}
+
+.cross-element:nth-of-type(5) {
+      background-color: #FAF126;
+      opacity: 0.9;
+}
+
+.carloboy {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #FAF126;
+      font-style: italic;
+      font-size: 0.7rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 55%;
+      left: 28.5%;
+      font-weight: bolder;
+      letter-spacing: -1px;
+}
+
+/* .carloboy::before {
+      content: "";
+      background-image: 
+} */
+
+.skills-section h2 {
+      font-family: "Nohemi Semibold";
+      font-size: calc(2rem + 6vw);
+      margin-top: 10px;
+      color: #FAF126;
 }
