@@ -1,11 +1,10 @@
 import projectsArray from "./projectsArray.js";
-console.log(projectsArray);
-
 const projectsPreview = document.querySelector(".projects__project-preview");
 const projectLinks = document.querySelectorAll(
   ".projects_subsection-left-listobject a"
 );
 const previewAnchor = document.querySelector(".projects__project-preview a");
+
 // array of objects containing project data
 
 let videoElement = null;

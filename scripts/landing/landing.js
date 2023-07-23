@@ -63,6 +63,7 @@ observer.observe(landingSection);
 // heart pop up and button for going down
 
 heart.addEventListener("click", () => {
+  console.log("hurensohn herz");
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
   aboutSection.style.transform = "translateY(0)";
