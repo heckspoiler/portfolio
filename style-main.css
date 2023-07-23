@@ -12,7 +12,8 @@ svg:hover {
 }
 
 img {
-      border: none;
+      border: none !important;
+      outline: none !important;
 }
 
 .cursor {
@@ -742,15 +743,14 @@ body::-webkit-scrollbar {
 }
 
 .projects__project-preview {
-      position: relative;
-      background-image: url("./assets/images/projects/projects-placeholder.png");
-      background-size: 40%;
-      background-repeat: no-repeat;
-      background-position: center;
+
       display: flex;
+      position: relative;
       overflow: hidden;
       height: 90%;
       width: 100%;
+      justify-content: center;
+      align-items: center;
 
 }
 
@@ -758,7 +758,7 @@ body::-webkit-scrollbar {
       scale: 0.85;
       height: 100%;
       width: 90%;
-      box-shadow: none;
+      outline: none;
       border: 0px;
 }
 

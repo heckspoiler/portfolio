@@ -39,6 +39,16 @@ const projectArray = [
   },
 ];
 
+const defaultImage = () => {
+  if (projectsImage.alt === "default") {
+    projectsImage.style.height = "60%";
+    projectsImage.style.width = "60%";
+  } else {
+    projectsImage.style.height = "100%";
+    projectsImage.style.width = "100%";
+  }
+};
+
 let videoElement = null;
 
 projectLinks.forEach((projectLink) => {
@@ -57,6 +67,7 @@ projectLinks.forEach((projectLink) => {
     );
     projectsImage.setAttribute("alt", `Image of Project ${dataProject}`);
   });
+  defaultImage();
 });
 
 projectsPreview.addEventListener("mouseenter", (e) => {
@@ -81,6 +92,7 @@ projectsPreview.addEventListener("mouseleave", (e) => {
     videoElement = null;
   }
 });
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
