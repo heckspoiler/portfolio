@@ -5,8 +5,7 @@ const projectLinks = document.querySelectorAll(
 
 const projectsImage = document.querySelector(".projects__project-preview img");
 
-console.log(projectsImage);
-
+//array of objects containing project data
 const projectArray = [
   {
     alt: "sinecloud",
@@ -40,8 +39,16 @@ const projectArray = [
   },
 ];
 
+let videoElement = null;
+
 projectLinks.forEach((projectLink) => {
   projectLink.addEventListener("click", (e) => {
+    // Remove any existing video element if present
+    if (videoElement) {
+      videoElement.remove();
+      videoElement = null;
+    }
+
     projectsPreview.style.backgroundImage = "none";
     const dataProject = e.currentTarget.dataset.project;
     projectsImage.setAttribute(
@@ -52,21 +59,28 @@ projectLinks.forEach((projectLink) => {
   });
 });
 
-projectsImage.addEventListener("mouseover", (e) => {
-  console.log("mousein");
-
+projectsPreview.addEventListener("mouseenter", (e) => {
+  // add video element if it doesn't exist
   projectArray.forEach((project) => {
     if (projectsImage.alt === `Image of Project ${project.alt}`) {
-      projectsPreview.innerHTML = `<video src='./assets/images/projects/testvideos/${project.alt}.mp4' alt='Video of Project ${project.alt}' autoplay></video>`;
+      if (!videoElement) {
+        videoElement = document.createElement("video");
+        videoElement.className = "project-video";
+        videoElement.src = `./assets/images/projects/testvideos/${project.alt}.mp4`;
+        videoElement.alt = `Video of Project ${project.alt}`;
+        videoElement.autoplay = true;
+        projectsPreview.appendChild(videoElement);
+      }
     }
   });
 });
 
-projectsArray.addEventListener("mouseout", (e) => {
-  console.log("mouseout");
-  projectsPreview.innerHTML = "";
+projectsPreview.addEventListener("mouseleave", (e) => {
+  if (videoElement) {
+    videoElement.remove();
+    videoElement = null;
+  }
 });
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
