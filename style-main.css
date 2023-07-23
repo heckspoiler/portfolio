@@ -742,6 +742,7 @@ body::-webkit-scrollbar {
 }
 
 .projects__project-preview {
+      position: relative;
       background-image: url("./assets/images/projects/projects-placeholder.png");
       background-size: 40%;
       background-repeat: no-repeat;
@@ -757,4 +758,17 @@ body::-webkit-scrollbar {
       scale: 0.85;
       height: 100%;
       width: 90%;
+      box-shadow: none;
+      border: 0px;
+}
+
+.project-video {
+      position: absolute;
+      scale: 0.85;
+      height: 100%;
+      width: 90%;
+}
+
+.project-video:hover {
+      cursor: pointer;
 }
