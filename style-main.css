@@ -779,7 +779,8 @@ body::-webkit-scrollbar {
       width: 90%;
       opacity: 0;
       transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-      backdrop-filter: blur(100px);
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
 }
 
 .project-video:hover {
