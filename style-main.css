@@ -11,6 +11,10 @@ svg:hover {
       cursor: none !important;
 }
 
+img {
+      border: none;
+}
+
 .cursor {
       position: absolute;
       height: 15px;
