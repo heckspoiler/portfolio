@@ -69,7 +69,11 @@ projectsPreview.addEventListener("mouseenter", (e) => {
         videoElement.src = `./assets/images/projects/testvideos/${project.alt}.mp4`;
         videoElement.alt = `Video of Project ${project.alt}`;
         videoElement.autoplay = true;
+        videoElement.loop = true;
         projectsPreview.appendChild(videoElement);
+        setTimeout(() => {
+          videoElement.style.opacity = 1;
+        }, 1000);
       }
     }
   });
@@ -86,11 +90,22 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
-        projectsPreview.innerHTML = `<img src="_blank" alt="_blank" />`;
+        // Remove any existing video element if present
+        if (videoElement) {
+          videoElement.remove();
+          videoElement = null;
+        }
+
+        // Reset the background and image attributes
+        projectsPreview.style.backgroundImage = "none";
+        projectsImage.setAttribute("src", "_blank");
+        projectsImage.setAttribute("alt", "_blank");
       }
     });
   },
   { threshold: 0.2 }
 );
 
-observer.observe(projectLinks);
+observer.observe(projectsPreview);
+
+observer.observe(projectsPreview);

@@ -26,7 +26,7 @@ projectLinks.forEach((link) => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      projectsPreview.innerHTML = "";
+      projectsPreview.innerHTML = `<img src="_blank" alt="_blank" />`;
       projectLinks.forEach((link) => {
         if (link.classList.contains("link-active")) {
           link.classList.remove("link-active");
