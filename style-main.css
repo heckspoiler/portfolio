@@ -755,11 +755,13 @@ body::-webkit-scrollbar {
 }
 
 .projects__project-preview img {
+      background-image: url(./assets/images/projects/projects-placeholder.png);
       scale: 0.85;
       height: 100%;
       width: 90%;
-      outline: none;
-      border: 0px;
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
 .project-video {
