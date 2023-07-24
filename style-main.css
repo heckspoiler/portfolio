@@ -979,7 +979,12 @@ body::-webkit-scrollbar {
       font-size: calc(2rem + 6vw);
       margin-top: 10px;
       color: #FAF126;
+      margin-left: -10vw;
+      opacity: 0;
+      transition: margin-left 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
 
 .skills-container__main {
       height: 82%;
@@ -1000,7 +1005,15 @@ body::-webkit-scrollbar {
       flex-direction: column-reverse;
       align-items: center;
       gap: 2vw;
+      transform: translateX(-15%);
+      opacity: 0;
+      transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+}
+
+.skills-pair-loaded {
+      transform: translateX(0) !important;
+      opacity: 1 !important;
 }
 
 .skills-svg {
@@ -1039,6 +1052,12 @@ body::-webkit-scrollbar {
       margin-top: 18vw;
       font-size: 0.8rem;
       letter-spacing: 2px;
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.subtitles-loaded {
+      opacity: 1 !important;
 }
 
 .programming {
