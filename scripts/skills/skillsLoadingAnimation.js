@@ -1,5 +1,6 @@
 const skillsSection = document.querySelector("#skills");
 const title = document.querySelector(".skills-section h2");
+const gameboy = document.querySelector(".skills-section__gameboy-container");
 const skillsPair = document.querySelectorAll(".skills-pair ");
 const subtitles = document.querySelectorAll(
   ".skills-container__subcontainer h3"
@@ -9,7 +10,12 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        skillsSection.style.opacity = 1;
         title.classList.add("title-loaded");
+        setTimeout(() => {
+          gameboy.classList.add("gameboy-loaded");
+        }, 100);
+
         const timeout = 100;
         setTimeout(() => {
           skillsPair.forEach((item, index) => {
@@ -18,13 +24,16 @@ const observer = new IntersectionObserver(
             }, timeout * (index + 1));
           });
         }, 200);
+
         setTimeout(() => {
           subtitles.forEach((subtitle) => {
             subtitle.classList.add("subtitles-loaded");
           });
         }, 1200);
       } else {
+        skillsSection.style.opacity = 0;
         title.classList.remove("title-loaded");
+        gameboy.classList.remove("gameboy-loaded");
         skillsPair.forEach((item) => {
           item.classList.remove("skills-pair-loaded");
         });
@@ -34,7 +43,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.8 }
+  { threshold: 0.9 }
 );
 
 observer.observe(skillsSection);
