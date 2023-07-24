@@ -1009,6 +1009,7 @@ body::-webkit-scrollbar {
 }
 
 .skills-level-container {
+      position: relative;
       width: 1.8vw;
       height: calc(14rem + 7vw);
       border: 1px solid #FAF126;
@@ -1017,14 +1018,17 @@ body::-webkit-scrollbar {
       justify-content: center;
 }
 
-.tailwind {
-      padding-bottom: 1.6rem;
-}
 
-.skills-level-container div {
+.cube {
       height: 10%;
       width: 100%;
       background-color: yellow;
+      position: absolute;
+      left: 50px;
+}
+
+.tailwind {
+      padding-bottom: 1.6rem;
 }
 
 .skills-container__subcontainer h3 {
