@@ -980,3 +980,128 @@ body::-webkit-scrollbar {
       margin-top: 10px;
       color: #FAF126;
 }
+
+.skills-container__main {
+      height: 82%;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      gap: 8vw;
+}
+
+.skills-container__subcontainer {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+}
+
+.skills-pair {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2vw;
+
+}
+
+.skills-svg {
+      scale: 0.6;
+
+}
+
+.skills-level-container {
+      width: 1.8vw;
+      height: calc(14rem + 7vw);
+      border: 1px solid #FAF126;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.tailwind {
+      padding-bottom: 1.6rem;
+}
+
+.skills-level-container div {
+      height: 10%;
+      width: 100%;
+      background-color: yellow;
+}
+
+.skills-container__subcontainer h3 {
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      white-space: nowrap;
+      color: #FAF126;
+      margin-top: 18vw;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+}
+
+.programming {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      white-space: nowrap;
+      transform: rotate(180deg);
+      margin-top: 0;
+      margin-bottom: 18vw;
+}
+
+.skills-section__dots-upper-mid {
+      height: 8vw;
+      width: 10vw;
+      position: absolute;
+      left: calc(4rem + 23vw);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      top: 20px;
+
+}
+
+.dot-upper-mid {
+      height: 1vw;
+      width: 1vw;
+      border-radius: 50%;
+}
+
+
+
+.dot-upper-mid:nth-of-type(2) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(3) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(4) {
+      background-color: #faf126
+}
+
+
+.dot-upper-mid:nth-of-type(12) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(13) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(14) {
+      background-color: #faf126
+}
+
+
+.dot-upper-mid:nth-of-type(23) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(24) {
+      background-color: #faf126
+}
+
+.dot-upper-mid:nth-of-type(22) {
+      background-color: #faf126
+}
