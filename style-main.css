@@ -1005,6 +1005,8 @@ body::-webkit-scrollbar {
       display: flex;
       justify-content: center;
       gap: 8vw;
+      pointer-events: none;
+
 }
 
 .skills-container__subcontainer {

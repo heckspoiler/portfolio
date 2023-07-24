@@ -10,7 +10,6 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        skillsSection.style.opacity = 1;
         title.classList.add("title-loaded");
         setTimeout(() => {
           gameboy.classList.add("gameboy-loaded");
@@ -31,7 +30,6 @@ const observer = new IntersectionObserver(
           });
         }, 1200);
       } else {
-        skillsSection.style.opacity = 0;
         title.classList.remove("title-loaded");
         gameboy.classList.remove("gameboy-loaded");
         skillsPair.forEach((item) => {
@@ -43,7 +41,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.9 }
+  { threshold: 0.5 }
 );
 
 observer.observe(skillsSection);
