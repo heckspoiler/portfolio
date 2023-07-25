@@ -1,7 +1,5 @@
 import projectsArray from "./projectsArray.js";
 
-console.log(projectsArray);
-
 const projectLinks = document.querySelectorAll(
   ".projects_subsection-left-list li a"
 );

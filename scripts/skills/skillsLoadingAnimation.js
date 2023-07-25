@@ -6,7 +6,7 @@ const subtitles = document.querySelectorAll(
   ".skills-container__subcontainer h3"
 );
 
-const observer = new IntersectionObserver(
+export const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -16,19 +16,25 @@ const observer = new IntersectionObserver(
         }, 100);
 
         const timeout = 100;
-        setTimeout(() => {
-          skillsPair.forEach((item, index) => {
-            setTimeout(() => {
-              item.classList.add("skills-pair-loaded");
-            }, timeout * (index + 1));
-          });
-        }, 200);
 
-        setTimeout(() => {
-          subtitles.forEach((subtitle) => {
-            subtitle.classList.add("subtitles-loaded");
-          });
-        }, 1200);
+        const animateSkillsPair = new Promise((resolve) => {
+          setTimeout(() => {
+            skillsPair.forEach((item, index) => {
+              setTimeout(() => {
+                item.classList.add("skills-pair-loaded");
+              }, timeout * (index + 1));
+            });
+            resolve();
+          }, 200);
+        });
+
+        animateSkillsPair.then(() => {
+          setTimeout(() => {
+            subtitles.forEach((subtitle) => {
+              subtitle.classList.add("subtitles-loaded");
+            });
+          }, 1000);
+        });
       } else {
         title.classList.remove("title-loaded");
         gameboy.classList.remove("gameboy-loaded");
