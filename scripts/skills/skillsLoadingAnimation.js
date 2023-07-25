@@ -1,5 +1,13 @@
-// const skillsSection = document.querySelector("#skills");
-const skillsSection = document.querySelector("#skills-container-test");
+const skillsSection = document.querySelector("#skills");
+const illustratorBox = document.querySelector("#illustrator");
+const photoshopBox = document.querySelector("#photoshop");
+const indesignBox = document.querySelector("#indesign");
+const figmaBox = document.querySelector("#figma");
+const htmlBox = document.querySelector("#html");
+const cssBox = document.querySelector("#css");
+const tailwindBox = document.querySelector("#tailwind");
+const javaScriptBox = document.querySelector("#javascript");
+const reactBox = document.querySelector("#react");
 const title = document.querySelector(".skills-section h2");
 const gameboy = document.querySelector(".skills-section__gameboy-container");
 const skillsPair = document.querySelectorAll(".skills-pair ");
@@ -9,13 +17,13 @@ const subtitles = document.querySelectorAll(
 
 let cubeArray = [];
 
-const doofus = function () {
+const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
   const delay = 80;
   setTimeout(() => {
-    for (let i = 0; i < 37; i++) {
+    for (let i = 0; i < numCubes; i++) {
       let cube = document.createElement("div");
       cubeArray.push(cube);
-      cube.className = "cube-test";
+      cube.className = "cube-test " + cubeClass;
       cube.style.left = Math.random() * window.innerWidth + "px";
       cube.style.top = (Math.random() * window.innerHeight) / 1.5 + "px";
       cube.style.opacity = 0;
@@ -27,7 +35,7 @@ const doofus = function () {
       cube.dataset.finalPositionX = finalPositionX;
       cube.dataset.finalPositionY = finalPositionY;
 
-      skillsSection.appendChild(cube);
+      sectionElement.appendChild(cube);
       const timeout = 20;
 
       cubeArray.forEach((item, index) => {
@@ -37,7 +45,7 @@ const doofus = function () {
       });
       const cubeFall = (target) => {
         return (
-          skillsSection.getBoundingClientRect().bottom +
+          sectionElement.getBoundingClientRect().bottom +
           100 -
           target.getBoundingClientRect().top
         );
@@ -54,7 +62,15 @@ const doofus = function () {
   }, 2500);
 };
 
-doofus();
+createCubesForSection(illustratorBox, 5, "cube-test-illustrator");
+createCubesForSection(photoshopBox, 4, "cube-test-photoshop");
+createCubesForSection(indesignBox, 4, "cube-test-indesign");
+createCubesForSection(figmaBox, 5, "cube-test-figma");
+createCubesForSection(htmlBox, 7, "cube-test-html");
+createCubesForSection(cssBox, 6, "cube-test-css");
+createCubesForSection(tailwindBox, 5, "cube-test-tailwind");
+createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
+createCubesForSection(reactBox, 5, "cube-test-react");
 
 export const observer = new IntersectionObserver(
   (entries) => {

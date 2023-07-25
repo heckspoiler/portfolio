@@ -1061,7 +1061,7 @@ body::-webkit-scrollbar {
       width: 20px;
       background-color: yellow;
       position: absolute;
-      transition: opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1), position 2s ease-in-out, left 0.2s ease-in, top 0.2s ease-in;
+      transition: opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1), left 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), top 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .tailwind {
