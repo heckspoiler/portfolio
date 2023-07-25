@@ -873,7 +873,7 @@ body::-webkit-scrollbar {
 }
 
 .button-ab:hover {
-      background-color: rgba(250, 241, 38, 0.3);
+      background-color: rgba(38, 215, 250, 0.3);
       cursor: pointer;
 }
 
