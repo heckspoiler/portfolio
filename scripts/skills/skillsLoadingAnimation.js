@@ -1,4 +1,5 @@
-const skillsSection = document.querySelector("#skills");
+// const skillsSection = document.querySelector("#skills");
+const skillsSection = document.querySelector("#skills-container-test");
 const title = document.querySelector(".skills-section h2");
 const gameboy = document.querySelector(".skills-section__gameboy-container");
 const skillsPair = document.querySelectorAll(".skills-pair ");
@@ -36,7 +37,8 @@ const doofus = function () {
       });
       const cubeFall = (target) => {
         return (
-          skillsSection.getBoundingClientRect().bottom -
+          skillsSection.getBoundingClientRect().bottom +
+          100 -
           target.getBoundingClientRect().top
         );
       };
@@ -44,7 +46,7 @@ const doofus = function () {
       cubeArray.forEach((cube) => {
         gsap.to(cube, {
           duration: 2,
-          y: cubeFall(cube) - 50,
+          y: cubeFall(cube),
           ease: "bounce",
         });
       });
