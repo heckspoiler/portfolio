@@ -18,6 +18,7 @@ const doofus = function () {
       cube.style.left = Math.random() * window.innerWidth + "px";
       cube.style.top = (Math.random() * window.innerHeight) / 1.5 + "px";
       cube.style.opacity = 0;
+      cube.style.zIndex = -1;
 
       let finalPositionX = Math.random * 1000 + "px";
       let finalPositionY = Math.random * 1000 + "px";
@@ -26,27 +27,32 @@ const doofus = function () {
       cube.dataset.finalPositionY = finalPositionY;
 
       skillsSection.appendChild(cube);
-      const timeout = 60;
+      const timeout = 20;
 
       cubeArray.forEach((item, index) => {
         setTimeout(() => {
           item.style.opacity = 1;
         }, timeout * (index + 1));
       });
+      const cubeFall = (target) => {
+        return (
+          skillsSection.getBoundingClientRect().bottom -
+          target.getBoundingClientRect().top
+        );
+      };
 
-      // gsap.to(".cube-test", {
-      //   duration: 2,
-      //   y: function (target) {
-      //     return (
-      //       skillsSection.getBoundingClientRect().bottom -
-      //       target.getBoundingClientRect().top
-      //     );
-      //   },
-      //   ease: "bounce", // bounce at the end
-      // });
+      cubeArray.forEach((cube) => {
+        gsap.to(cube, {
+          duration: 2,
+          y: cubeFall(cube) - 50,
+          ease: "bounce",
+        });
+      });
     }
   }, 2500);
 };
+
+doofus();
 
 export const observer = new IntersectionObserver(
   (entries) => {
@@ -77,7 +83,6 @@ export const observer = new IntersectionObserver(
             });
           }, 1000);
         });
-        doofus();
       } else {
         title.classList.remove("title-loaded");
         gameboy.classList.remove("gameboy-loaded");
