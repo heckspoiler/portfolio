@@ -62,19 +62,23 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
   }, 2500);
 };
 
-createCubesForSection(illustratorBox, 5, "cube-test-illustrator");
-createCubesForSection(photoshopBox, 4, "cube-test-photoshop");
-createCubesForSection(indesignBox, 4, "cube-test-indesign");
-createCubesForSection(figmaBox, 5, "cube-test-figma");
-createCubesForSection(htmlBox, 7, "cube-test-html");
-createCubesForSection(cssBox, 6, "cube-test-css");
-createCubesForSection(tailwindBox, 5, "cube-test-tailwind");
-createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
-createCubesForSection(reactBox, 5, "cube-test-react");
+let hasBeenInView = false;
 
 export const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
+      if (entry.isIntersecting && !hasBeenInView) {
+        createCubesForSection(illustratorBox, 5, "cube-test-illustrator");
+        createCubesForSection(photoshopBox, 4, "cube-test-photoshop");
+        createCubesForSection(indesignBox, 4, "cube-test-indesign");
+        createCubesForSection(figmaBox, 5, "cube-test-figma");
+        createCubesForSection(htmlBox, 7, "cube-test-html");
+        createCubesForSection(cssBox, 6, "cube-test-css");
+        createCubesForSection(tailwindBox, 5, "cube-test-tailwind");
+        createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
+        createCubesForSection(reactBox, 5, "cube-test-react");
+        hasBeenInView = true;
+      }
       if (entry.isIntersecting) {
         title.classList.add("title-loaded");
         setTimeout(() => {
