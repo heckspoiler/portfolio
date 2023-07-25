@@ -891,7 +891,7 @@ body::-webkit-scrollbar {
       gap: 2px;
       justify-content: space-evenly;
       top: 88%;
-      left: 50%;
+      left: 45%;
       transform: translateX(-50%);
       align-items: flex-end;
 }
