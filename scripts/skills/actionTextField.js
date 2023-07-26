@@ -10,16 +10,16 @@ const fieldParagraph = document.querySelector(
 
 const buttons = document.querySelectorAll(".button-ab");
 
-const sectionTextFieldAutomation = setTimeout(() => {
-  actionTextField.classList.add("click-me-field__visible");
+const sectionTextFieldAutomation = () => {
+  actionTextField.style.opacity = 1;
   setTimeout(() => {
-    fieldParagraph.innerHTML = "i think this could be solved...";
+    fieldParagraph.innerHTML = "I think this could be solved...";
   }, 3000);
 
   setTimeout(() => {
-    fieldParagraph.innerHTML = "by clicking A or B on the gameboy!";
+    fieldParagraph.innerHTML = "By clicking A or B on the gameboy!";
   }, 5500);
-}, 5000);
+};
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -38,3 +38,5 @@ buttons.forEach((button) => {
     }, 1500);
   });
 });
+
+observer.observe(skillsSection);

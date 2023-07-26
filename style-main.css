@@ -996,7 +996,7 @@ body::-webkit-scrollbar {
       border: 4px solid #faf126;
       position: absolute;
       left: calc(11rem + 19vw);
-      top: -20rem;
+      top: 8rem;
       background-color: #711ef8;
       z-index: 2;
       display: flex;
@@ -1012,8 +1012,8 @@ body::-webkit-scrollbar {
 }
 
 .click-me-field__visible {
-      opacity: 1;
-      top: 8rem;
+      opacity: 1 !important;
+
 }
 
 .skills-section h2 {
