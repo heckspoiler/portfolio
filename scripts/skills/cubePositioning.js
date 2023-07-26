@@ -29,16 +29,19 @@ buttons.forEach((button) => {
     Object.keys(skills).forEach((skillKey) => {
       let skillArray = skills[skillKey];
       skillArray.forEach((cube, index) => {
-        let topCorrection = 9;
-        let topPosition = (topCorrection - index) * 10 + "%";
-        cube.style.transform = "translate(0, 0)";
-        cube.style.transition =
-          "opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1), left 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), top 2s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95)";
-        cube.style.width = "100%";
-        cube.style.height = "10%";
-        cube.style.left = 0;
-        cube.style.top = topPosition;
-        cube.style.marginTop = 0;
+        let delay = index * 0.3;
+        setTimeout(() => {
+          let topCorrection = 9;
+          let topPosition = (topCorrection - index) * 10 + "%";
+          cube.style.transform = "translate(0, 0)";
+          cube.style.transition =
+            "opacity 0.7s cubic-bezier(0.53, 1, 0.720, 1), left 2s cubic-bezier(0.45, 0.05, 0.85, 0.95), top 2s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95)";
+          cube.style.width = "100%";
+          cube.style.height = "10%";
+          cube.style.left = 0;
+          cube.style.top = topPosition;
+          cube.style.marginTop = 0;
+        }, delay * 1000);
       });
     });
   });
