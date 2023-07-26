@@ -35,6 +35,6 @@ buttons.forEach((button) => {
 
     setTimeout(() => {
       actionTextField.classList.remove("click-me-field__visible");
-    }, 1000);
+    }, 1500);
   });
 });

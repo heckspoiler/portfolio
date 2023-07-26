@@ -1002,7 +1002,7 @@ body::-webkit-scrollbar {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955), top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955), top 0.8s cubic-bezier(0.2, 0.03, 0.515, 0.955)
 }
 
 .skills-section__click-me-field p {
