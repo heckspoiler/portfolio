@@ -1410,7 +1410,19 @@ body::-webkit-scrollbar {
 footer {
       display: flex;
       padding-left: 30px;
+      align-items: center;
 }
+
+footer h2 {
+      font-size: calc(1.2rem + 1.5vw) !important;
+      transition: scale 0.2s ease-in;
+}
+
+footer a:hover {
+      scale: 1.05;
+      cursor: pointer;
+}
+
 
 footer svg {
       scale: 0.5;
@@ -1419,4 +1431,5 @@ footer svg {
 
 footer svg:hover {
       scale: 0.55;
+      cursor: pointer;
 }
