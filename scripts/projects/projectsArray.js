@@ -40,7 +40,7 @@ const projectArray = [
     <div class="decor-dot"></div>
     <p>Shopify</p>
     <div class="decor-dot"></div>
-    <p>express.js/p>
+    <p>express.js</p>
     `,
   },
   {

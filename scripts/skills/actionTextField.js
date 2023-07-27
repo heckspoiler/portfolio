@@ -10,7 +10,7 @@ const fieldParagraph = document.querySelector(
 
 const buttons = document.querySelectorAll(".button-ab");
 
-const sectionTextFieldAutomation = () => {
+export const sectionTextFieldAutomation = () => {
   actionTextField.style.opacity = 1;
   setTimeout(() => {
     fieldParagraph.innerHTML = "I think this could be solved...";
@@ -21,22 +21,20 @@ const sectionTextFieldAutomation = () => {
   }, 5500);
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      sectionTextFieldAutomation();
-    }
-  });
-});
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       sectionTextFieldAutomation();
+//     }
+//   });
+// });
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    fieldParagraph.innerHTML = "Thanks for playing!";
+    fieldParagraph.innerHTML = "Thanks for helping out!";
 
     setTimeout(() => {
-      actionTextField.classList.remove("click-me-field__visible");
+      actionTextField.style.opacity = 0;
     }, 1500);
   });
 });
-
-observer.observe(skillsSection);

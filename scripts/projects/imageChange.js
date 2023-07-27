@@ -4,6 +4,7 @@ const projectLinks = document.querySelectorAll(
   ".projects_subsection-left-listobject a"
 );
 const previewAnchor = document.querySelector(".projects__project-preview a");
+const links = document.querySelectorAll(".link-active");
 
 // array of objects containing project data
 
@@ -46,6 +47,7 @@ projectsPreview.addEventListener("mouseenter", (e) => {
         videoElement.alt = `Video of Project ${project.alt}`;
         videoElement.autoplay = true;
         videoElement.loop = true;
+
         previewAnchor.appendChild(videoElement);
         setTimeout(() => {
           videoElement.style.opacity = 1;

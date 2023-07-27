@@ -998,6 +998,7 @@ body::-webkit-scrollbar {
       left: calc(11rem + 19vw);
       top: 8rem;
       background-color: #711ef8;
+      opacity: 0;
       z-index: 2;
       display: flex;
       justify-content: center;

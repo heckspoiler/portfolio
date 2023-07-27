@@ -14,6 +14,7 @@ const skillsPair = document.querySelectorAll(".skills-pair ");
 const subtitles = document.querySelectorAll(
   ".skills-container__subcontainer h3"
 );
+import { sectionTextFieldAutomation } from "./actionTextField.js";
 
 let cubeArray = [];
 
@@ -77,6 +78,9 @@ export const observer = new IntersectionObserver(
         createCubesForSection(tailwindBox, 5, "cube-test-tailwind");
         createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
         createCubesForSection(reactBox, 5, "cube-test-react");
+        setTimeout(() => {
+          sectionTextFieldAutomation();
+        }, 5000);
         hasBeenInView = true;
       }
       if (entry.isIntersecting) {
