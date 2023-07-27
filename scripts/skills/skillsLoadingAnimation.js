@@ -26,7 +26,7 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
       cubeArray.push(cube);
       cube.className = "cube-test " + cubeClass;
       cube.style.left = Math.random() * window.innerWidth + "px";
-      cube.style.top = (Math.random() * window.innerHeight) / 1.5 + "px";
+      cube.style.top = (Math.random() * window.innerHeight) / 2 + "px";
       cube.style.opacity = 0;
       cube.style.zIndex = -1;
 
@@ -37,7 +37,7 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
       cube.dataset.finalPositionY = finalPositionY;
 
       sectionElement.appendChild(cube);
-      const timeout = 20;
+      const timeout = 30;
 
       cubeArray.forEach((item, index) => {
         setTimeout(() => {
@@ -56,7 +56,7 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
         gsap.to(cube, {
           duration: 2,
           y: cubeFall(cube),
-          ease: "bounce",
+          ease: "bounce.out",
         });
       });
     }
@@ -75,7 +75,7 @@ export const observer = new IntersectionObserver(
         createCubesForSection(figmaBox, 5, "cube-test-figma");
         createCubesForSection(htmlBox, 7, "cube-test-html");
         createCubesForSection(cssBox, 6, "cube-test-css");
-        createCubesForSection(tailwindBox, 5, "cube-test-tailwind");
+        createCubesForSection(tailwindBox, 4, "cube-test-tailwind");
         createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
         createCubesForSection(reactBox, 5, "cube-test-react");
         setTimeout(() => {

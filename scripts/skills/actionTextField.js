@@ -17,7 +17,7 @@ export const sectionTextFieldAutomation = () => {
   }, 3000);
 
   setTimeout(() => {
-    fieldParagraph.innerHTML = "By clicking A or B on the gameboy!";
+    fieldParagraph.innerHTML = "by clicking A or B on the gameboy!";
   }, 5500);
 };
 
@@ -35,6 +35,6 @@ buttons.forEach((button) => {
 
     setTimeout(() => {
       actionTextField.style.opacity = 0;
-    }, 1500);
+    }, 3500);
   });
 });
