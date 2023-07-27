@@ -1010,11 +1010,13 @@ body::-webkit-scrollbar {
       font-family: "Nohemi Semibold";
       color: #faf126;
       font-size: 1.3rem;
+      display: flex;
+      justify-items: flex-start;
 }
 
-.click-me-field__visible {
-      opacity: 1 !important;
-
+.power-text {
+      font-size: 0.4em;
+      margin-top: 10px;
 }
 
 .skills-section h2 {

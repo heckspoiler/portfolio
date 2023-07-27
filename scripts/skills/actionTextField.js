@@ -17,7 +17,7 @@ export const sectionTextFieldAutomation = () => {
   }, 3000);
 
   setTimeout(() => {
-    fieldParagraph.innerHTML = "by clicking A or B on the gameboy!";
+    fieldParagraph.innerHTML = `by clicking A or B on the carlo boy<sup class="power-text">tm</sup>!`;
   }, 5500);
 };
 
