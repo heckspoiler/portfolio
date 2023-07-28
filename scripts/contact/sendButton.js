@@ -1,6 +1,7 @@
 const sendButton = document.querySelector(".chatbot__send-button");
 const chatContainer = document.querySelector(".chatbot__messages");
 const chatInput = document.querySelector(".chatbot__input-field textarea");
+const textfieldCount = document.getElementById("chatbot__numbers");
 
 chatInput.addEventListener("keydown", function (event) {
   if (event.key == "Enter" && !event.shiftKey) {
@@ -18,6 +19,7 @@ sendButton.addEventListener("click", () => {
     textMessage.innerHTML = `<h5>You</h5> <p class="user_message">${chatInput.value}</p>`;
     chatContainer.appendChild(textMessage);
     chatInput.value = "";
+    textfieldCount.innerHTML = "0/200";
     firstClick += 1;
   } else {
     alert("Please, write something.");

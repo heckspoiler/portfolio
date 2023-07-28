@@ -1515,7 +1515,6 @@ body::-webkit-scrollbar {
       border: 2px solid #FAF126;
       padding: 10px;
       height: 75%;
-      gap: 10px;
       width: 90%;
       display: flex;
       flex-direction: column;
@@ -1526,13 +1525,13 @@ body::-webkit-scrollbar {
 .chatbot__messages {
       height: 65%;
       width: 100%;
-      overflow: auto;
+      overflow: scroll;
       display: flex;
       flex-direction: column;
-
       border: 2px solid #FAF126;
       padding: 5px 10px;
       background-color: #FAF126;
+      gap: 10px;
 }
 
 .chatbot__messages::-webkit-scrollbar {
@@ -1543,7 +1542,7 @@ body::-webkit-scrollbar {
       align-self: flex-end;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
 }
 
 .user_message-container h5 {
@@ -1551,7 +1550,7 @@ body::-webkit-scrollbar {
       font-family: "Nohemi Regular";
       align-self: flex-end;
       padding-right: 15px;
-      padding: 5px;
+      padding: 1px;
       color: #f46265;
 }
 
@@ -1572,7 +1571,7 @@ body::-webkit-scrollbar {
       align-self: flex-start;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
 }
 
 .chatbot_message-container svg {
