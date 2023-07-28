@@ -38,6 +38,7 @@ function displayAnswer(answer) {
   <circle cx="24.7222" cy="19.8843" r="1.99444" fill="#F9E32C" />
   </svg> <p class="chatbot_message">${answer}</p>`;
   chatContainer.appendChild(chatAnswer);
+  chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
 let firstClick = 0;
@@ -48,10 +49,11 @@ sendButton.addEventListener("click", () => {
     textMessage.classList.add("user_message-container");
     textMessage.innerHTML = `<h5>You</h5> <p class="user_message">${chatInput.value}</p>`;
     chatContainer.appendChild(textMessage);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
 
-    askQuestion(chatInput.value); // call askQuestion with the current input
+    askQuestion(chatInput.value);
 
-    chatInput.value = ""; // then clear the input
+    chatInput.value = ""; 
     textfieldCount.innerHTML = "0/250";
     firstClick += 1;
   } else {
