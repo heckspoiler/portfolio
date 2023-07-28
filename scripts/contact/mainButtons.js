@@ -11,7 +11,7 @@ const chatbot = document.querySelector(".contact-section__chatbot-container");
 buttonForm.addEventListener("click", () => {
   form.classList.add("form-visible");
   contactSectionHide.forEach((element) => {
-    element.style.filter = "invert(100%) opacity(0.2)";
+    element.style.filter = "invert(100%) opacity(0.1)";
   });
 });
 
@@ -26,7 +26,7 @@ buttonFormClose.addEventListener("click", () => {
 buttonChat.addEventListener("click", () => {
   chatbot.classList.add("form-visible");
   contactSectionHide.forEach((element) => {
-    element.style.filter = "invert(100%) opacity(0.2)";
+    element.style.filter = "invert(100%) opacity(0.1)";
   });
 });
 
