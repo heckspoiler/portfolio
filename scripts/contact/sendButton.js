@@ -19,7 +19,7 @@ sendButton.addEventListener("click", () => {
     textMessage.innerHTML = `<h5>You</h5> <p class="user_message">${chatInput.value}</p>`;
     chatContainer.appendChild(textMessage);
     chatInput.value = "";
-    textfieldCount.innerHTML = "0/200";
+    textfieldCount.innerHTML = "0/250";
     firstClick += 1;
   } else {
     alert("Please, write something.");
