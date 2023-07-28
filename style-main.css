@@ -1263,9 +1263,10 @@ body::-webkit-scrollbar {
       height: calc(25rem + 10vw);
       width: calc(15rem + 25vw);
       padding: 30px;
+      opacity: 0;
       z-index: 1;
       justify-content: space-around;
-      transition: transform 0.4s ease-in-out, opacity 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      transition: opacity 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .form-visible {

@@ -7,15 +7,15 @@ const buttonFormClose = document.querySelector(".form_cross");
 
 buttonForm.addEventListener("click", () => {
   form.classList.add("form-visible");
-  contactSectionHide.forEach((element) => {
-    element.classList.add("contact-section-hidden");
-  });
+  // contactSectionHide.forEach((element) => {
+  //   element.classList.add("contact-section-hidden");
+  // });
 });
 
 buttonFormClose.addEventListener("click", () => {
   form.classList.remove("form-visible");
 
-  contactSectionHide.forEach((element) => {
-    element.classList.remove("contact-section-hidden");
-  });
+  // contactSectionHide.forEach((element) => {
+  //   element.classList.remove("contact-section-hidden");
+  // });
 });
