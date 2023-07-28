@@ -7,12 +7,13 @@ const port = 3000;
 const apiKey = process.env.API_KEY;
 
 app.get("/ask", async (req, res) => {
+  const standardPrompt = "I don't know. I'm just a bot.";
   const question = req.query.q;
 
   const gpt3Response = await axios.post(
     "https://api.openai.com/v1/engines/davinci-codex/completions",
     {
-      prompt: question,
+      prompt: `${standardPrompt}: ${question}`,
       max_tokens: 500,
     },
     {

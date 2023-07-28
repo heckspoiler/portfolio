@@ -1195,8 +1195,8 @@ body::-webkit-scrollbar {
       transition: opacity 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
-.contact-section-hidden {
-      opacity: 0;
+.contact-section-blur {
+      filter: blur(4px);
 }
 
 .contact-section h2 {
@@ -1251,7 +1251,9 @@ body::-webkit-scrollbar {
       border: 2px solid #faf126;
 }
 
-.contact-section form {
+/* form styling! */
+
+.contact-section__contact-form {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1408,15 +1410,199 @@ body::-webkit-scrollbar {
 }
 
 
+/* chatbot styling! */
+
+.contact-section__chatbot-container {
+      height: calc(25rem + 13vw);
+      width: calc(12rem + 22vw);
+      position: absolute;
+      z-index: 1;
+      border: 4px solid #FAF126;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #F46265;
+
+}
+
+.chatbot {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      gap: 2vw;
+}
+
+.chatbot__header {
+      margin-top: 2%;
+      height: 13%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.chatbot__logo {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 5px;
+}
+
+.chatbot__logo svg {
+      scale: 0.85;
+}
+
+.chatbot__logo h4 {
+      font-family: "Nohemi Regular";
+      color: #FAF126;
+      padding-top: 10px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+}
+
+.chatbot__cross {
+
+      height: 20px;
+      width: 20px;
+      position: relative;
+      transition: transform 1s ease-in-out;
+}
+
+.chatbot__cross:hover {
+      cursor: pointer;
+}
+
+.chatbot__cross::before,
+.chatbot__cross::after {
+      height: 100%;
+      width: 5px;
+      background-color: #FAF126;
+      position: absolute;
+      content: "";
+}
+
+.chatbot__cross::before {
+      transform: rotate(45deg);
+      transition: transform 0.2s ease-in-out;
+}
+
+.chatbot__cross:hover::before {}
+
+.chatbot__cross::after {
+      transform: rotate(-45deg);
+      transition: transform 0.2s ease-in-out;
+}
+
+.chatbot__cross:hover::after {
+      transform: rotate(135deg);
+}
+
+.chatbot__main-field {
+      background-color: #faf126;
+      padding: 10px;
+      height: 75%;
+      gap: 10px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.chatbot__messages {
+      height: 65%;
+      width: 100%;
+      overflow: auto;
+
+      ::-webkit-scrollbar {
+            display: none;
+
+      }
+
+}
+
+
+
+.chatbot__input {
+      height: 35%;
+      background-color: #f46265;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+}
+
+.chatbot__input-field {
+      height: 90%;
+      width: 100%;
+}
+
+.chatbot__input-field textarea {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      height: 90%;
+      padding: 10px;
+      font-family: "Nohemi Regular";
+      color: #FAF126;
+      letter-spacing: 1.3px;
+      font-size: 0.9rem;
+}
+
+.chatbot__input-field textarea::placeholder {
+      color: #faf126;
+      opacity: 0.6;
+      font-size: 0.7rem;
+}
+
+.chatbot__input-field textarea:focus {
+      outline: none;
+}
+
+
+.chatbot__send-field {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 5px;
+      align-items: center;
+}
+
+.chatbot__send-field p {
+      font-family: "Nohemi Medium";
+      font-size: 0.7rem;
+      color: #FAF126;
+}
+
+.chatbot__send-field button {
+      background-color: transparent;
+      border: 2px solid #FAF126;
+      width: calc(3rem + 1.5vw);
+      padding: 5px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-family: "Nohemi Regular";
+      color: #faf126;
+}
+
+
+/* footer styling! */
 footer {
       display: flex;
       padding-left: 30px;
       align-items: center;
 }
 
-footer h2 {
+.footer-h2 {
       font-size: calc(1.2rem + 1.5vw) !important;
       transition: scale 0.2s ease-in;
+      opacity: 1;
+      visibility: visible;
+
 }
 
 footer a:hover {
