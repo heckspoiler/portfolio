@@ -1233,6 +1233,7 @@ body::-webkit-scrollbar {
       align-items: center;
       transition: height 1.5s ease-in-out, width 1.5s ease-in-out;
       height: calc(20rem + 20vw);
+      z-index: 1;
 
 }
 

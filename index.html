@@ -26,7 +26,8 @@
       <script src="./scripts/skills/actionTextField.js" type="module"></script>
       <script src="./scripts/contact/chatResponse.js" type="module"></script>
       <script src="./scripts/contact/mainButtons.js" type="module"></script>
-      <script src="./scripts/contact/sendButton.js" type="module"></script>
+      <script src="./scripts/contact/chatSendButton.js" type="module"></script>
+      <script src="./scripts/contact/formSendButton.js" type="module"></script>
       <script src="./scripts/contact/chatResponse.js" type="module"></script>
       <script src="./scripts/contact/textfieldCount.js" type="module"></script>
 
@@ -510,7 +511,7 @@
                                     <button class="charlybot-button">find out more about me!</button>
                               </div>
                               <div class="form_container">
-                                    <form class="contact-section__contact-form">
+                                    <form class="contact-section__contact-form" id="contact-form">
                                           <div class="form_cross">
                                                 <!-- ALSO NEED TO ADD THIS TO THE HOVER STATES FOR CUSTOM CURSOR¨!!!!!!!!!!!-->
                                                 <div></div>
@@ -518,9 +519,9 @@
                                           <h3>Get in touch with me!</h3>
                                           <section class="form-options">
 
-                                                <input type="text" placeholder="name" required>
-                                                <input type="text" placeholder="email" required>
-                                                <select>
+                                                <input type="text" placeholder="name" required id="form_name">
+                                                <input type="email" placeholder="email" required id="form_email">
+                                                <select id="form_select" required>
                                                       <option disabled selected>choose one</option>
                                                       <option value="joboffer">come work for us!</option>
                                                       <option value="interviewoffer">we would like to invite you for an
@@ -531,7 +532,8 @@
                                                       </option>
                                                       <option value="workoffer">build me a website please!</option>
                                                 </select>
-                                                <textarea placeholder="type here!" required></textarea>
+                                                <textarea placeholder="type here!" required
+                                                      id="form_message"></textarea>
                                           </section>
 
                                           <section class="checkbox-send">
@@ -540,7 +542,7 @@
                                                       <input type="checkbox" class="send-copy" id="checkbox"
                                                             name="checkbox" value="copy">
                                                 </section>
-                                                <button type="submit">send</button>
+                                                <button type="submit" id="form_send-button">send</button>
                                           </section>
                                     </form>
                                     <button class="contact-button">drop me a line!</button>

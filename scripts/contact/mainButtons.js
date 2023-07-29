@@ -8,22 +8,23 @@ const buttonChat = document.querySelector(".charlybot-button");
 const buttonChatClose = document.querySelector(".chatbot__cross");
 const chatbot = document.querySelector(".contact-section__chatbot-container");
 const charlybotContainer = document.querySelector(".charlybot_container");
+const timeout = 2000;
 
 buttonForm.addEventListener("click", () => {
-  buttonForm.innerHTML = "<h3>initializing...</h3";
+  buttonForm.innerHTML = "<h3>sharpening the pencil...</h3";
   buttonForm.classList.add("button-resize");
   setTimeout(() => {
     form.classList.add("form-visible");
-  }, 2000);
+  }, timeout);
 });
 
 buttonFormClose.addEventListener("click", () => {
   form.classList.remove("form-visible");
-  buttonForm.innerHTML = "<h3>resetting...</h3>";
+  buttonForm.innerHTML = "<h3>maybe another time!</h3>";
   buttonForm.classList.remove("button-resize");
   setTimeout(() => {
     buttonForm.innerHTML = "drop me a line!";
-  }, 2000);
+  }, timeout);
 });
 
 buttonChat.addEventListener("click", () => {
@@ -31,7 +32,7 @@ buttonChat.addEventListener("click", () => {
   buttonChat.classList.add("button-resize");
   setTimeout(() => {
     chatbot.classList.add("form-visible");
-  }, 2000);
+  }, timeout);
 });
 
 buttonChatClose.addEventListener("click", () => {
@@ -41,5 +42,5 @@ buttonChatClose.addEventListener("click", () => {
   buttonChat.classList.remove("button-resize");
   setTimeout(() => {
     buttonChat.innerHTML = "find out more about me!";
-  }, 2000);
+  }, timeout);
 });
