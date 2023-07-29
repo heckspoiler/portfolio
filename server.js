@@ -66,13 +66,39 @@ app.post("/form", async (req, res) => {
            Checkbox: ${req.body.checkbox}`,
   };
 
+  let mailRedirect = {
+    from: email,
+    to: req.body.email,
+    subject: `Thank you for your message!`,
+    text: `Thank you for your message! I will get back to you as soon as possible. 
+Best regards, Carlo
+             
+
+Your message:
+             ${req.body.message}
+
+Your email:
+              ${req.body.email}
+             `,
+  };
+
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
       res.status(500).json({ message: "Error, email not sent" });
     } else {
       console.log("Email sent: " + info.response);
-      res.json({ message: "Success, email sent!" });
+      if (req.body.checkbox === true) {
+        transporter.sendMail(mailRedirect, (error, info) => {
+          if (error) {
+            console.log(error);
+            res.status(500).json({ message: "Error, email not sent" });
+          } else {
+            console.log("Email sent: " + info.response);
+            res.json({ message: "Success, emails sent!" });
+          }
+        });
+      }
     }
   });
 });
