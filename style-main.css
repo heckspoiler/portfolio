@@ -1237,7 +1237,7 @@ body::-webkit-scrollbar {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: height 1.5s ease-in-out, width 1.5s ease-in-out;
+      transition: height 0.8s ease-in-out, width 0.8s ease-in-out;
       height: calc(20rem + 20vw);
       z-index: 1;
 
@@ -1260,7 +1260,7 @@ body::-webkit-scrollbar {
       text-transform: uppercase;
       padding: 20px;
       text-align: left;
-      transition: color 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease, border 0.2s ease, height 1.5s ease-in-out, width 1.5s ease-in-out;
+      transition: color 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease, border 0.2s ease, height 0.8s cubic-bezier(0.23, 1, 0.320, 1), width 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .button-resize {
@@ -1299,7 +1299,7 @@ body::-webkit-scrollbar {
       z-index: 1;
       visibility: hidden;
       justify-content: space-around;
-      transition: opacity 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+      transition: opacity 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .form-visible {
