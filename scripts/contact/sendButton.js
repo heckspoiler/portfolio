@@ -53,7 +53,7 @@ sendButton.addEventListener("click", () => {
 
     askQuestion(chatInput.value);
 
-    chatInput.value = ""; 
+    chatInput.value = "";
     textfieldCount.innerHTML = "0/250";
     firstClick += 1;
   } else {
@@ -68,5 +68,8 @@ sendButton.addEventListener("click", () => {
   }
   if (firstClick > 10) {
     chatInput.placeholder = "you seem interested, that's cool!";
+  }
+  if (firstClick > 30) {
+    chatInput.placeholder = "you're still here? that's awesome!";
   }
 });
