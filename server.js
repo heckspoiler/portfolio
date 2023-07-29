@@ -6,6 +6,7 @@ const axios = require("axios");
 const nodemailer = require("nodemailer");
 const app = express();
 const port = 3000;
+const prompt = require("./prompt");
 const apiKey = process.env.API_KEY;
 const email = process.env.MAIL;
 const password = process.env.MAIL_PW;
@@ -13,6 +14,7 @@ const password = process.env.MAIL_PW;
 app.use(cors());
 
 app.use(express.json());
+console.log(prompt);
 
 let transporter = nodemailer.createTransport({
   service: "outlook",
@@ -23,9 +25,7 @@ let transporter = nodemailer.createTransport({
 });
 
 app.get("/ask", async (req, res) => {
-  const standardPrompt = `You’re charlybot, my personal portfolio bot. You’re only allowed to answer questions about me and nothing else. i’ll give you the information needed below and if the person asking you the question asks about something not related to the stuff below, you will tell them that you’re not programmed to answer other questions than questions about me, Carlo. if the person says thank you, goodbye or hello or anything similar, you can answer. but just a short hello or a short goodbye. age: 32My hobbies are: ice hockey, reading, music, programming, fishing.
-  i like: dogs, music, chilling, me-time, family.
-  i dropped out of university because it wasn’t my world and i chose the self taught path because i didn’t want to waste more time and just focus on the stuff that i’m really passionate and interested about. `;
+  const standardPrompt = prompt;
   const question = req.query.q;
 
   try {
