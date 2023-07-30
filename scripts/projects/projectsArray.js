@@ -19,9 +19,9 @@ const projectArray = [
   },
   {
     alt: "station",
-    imgUrl: "./assets/images/projects/testimages/station.jpg",
+    imgUrl: "./assets/images/projects/testimages/station_daw.png",
     videoUrl: "",
-    link: "",
+    link: "https://64b8fa5eae17a45b2c15a874--papaya-macaron-4ea9a6.netlify.app/",
     description: "Landing page for a DAW",
     technologies: `<p>Vanilla Javascript</p>
     <div class="decor-dot"></div>

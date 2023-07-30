@@ -709,10 +709,21 @@ body::-webkit-scrollbar {
       background-size: 60%;
       background-position: center;
       background-repeat: no-repeat;
+
+
 }
 
-.projects-preview-loaded {
+.projects__project-preview a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
 
+}
+
+
+
+.projects-preview-loaded {
       opacity: 1;
 }
 
@@ -730,6 +741,8 @@ body::-webkit-scrollbar {
 
 
 }
+
+
 
 .projects__technologies {
       display: flex;
@@ -776,7 +789,9 @@ body::-webkit-scrollbar {
       scale: 0.85;
       height: 100%;
       width: 90%;
+      padding: 30px 0;
 }
+
 
 .project-video {
       position: absolute;
@@ -785,8 +800,8 @@ body::-webkit-scrollbar {
       width: 90%;
       opacity: 0;
       transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-      backdrop-filter: blur(50px);
-      -webkit-backdrop-filter: blur(50px);
+      /* backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px); */
 }
 
 .project-video:hover {}

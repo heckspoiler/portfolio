@@ -25,12 +25,13 @@ projectLinks.forEach((projectLink) => {
     if (!projectsImage) {
       // if img does not exist, create it
       projectsImage = document.createElement("img");
+      projectsImage.className = "project-image";
       previewAnchor.appendChild(projectsImage);
     }
 
     projectsImage.setAttribute(
       "src",
-      `./assets/images/projects/testimages/${dataProject}.jpg`
+      `./assets/images/projects/testimages/${dataProject}.png`
     );
     projectsImage.setAttribute("alt", `Image of Project ${dataProject}`);
   });
@@ -43,12 +44,13 @@ projectsPreview.addEventListener("mouseenter", (e) => {
       if (!videoElement) {
         videoElement = document.createElement("video");
         videoElement.className = "project-video";
-        videoElement.src = `./assets/images/projects/testvideos/${project.alt}.mp4`;
+        videoElement.src = `./assets/images/projects/testvideos/${project.alt}.mov`;
         videoElement.alt = `Video of Project ${project.alt}`;
         videoElement.autoplay = true;
         videoElement.loop = true;
 
         previewAnchor.appendChild(videoElement);
+        previewAnchor.href = project.link;
         setTimeout(() => {
           videoElement.style.opacity = 1;
         }, 200);
