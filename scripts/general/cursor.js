@@ -23,19 +23,31 @@ const moveCursor = (e) => {
 const growCursor = () => {
   cursor.style.width = "22px";
   cursor.style.height = "22px";
-  cursor.style.backgroundColor = "green";
 };
 
 const resetCursor = () => {
   cursor.style.width = "15px";
   cursor.style.height = "15px";
-  cursor.style.backgroundColor = "inital";
+  cursor.style.borderRadius = "50%";
 };
 
-const imagesAndLinks = document.querySelectorAll("img, a");
+const imagesAndLinks = document.querySelectorAll("img, a, button");
 
 imagesAndLinks.forEach((element) => {
   element.addEventListener("mouseenter", growCursor);
+  element.addEventListener("mouseleave", resetCursor);
+});
+
+const textfieldsAndInputs = document.querySelectorAll("input, textarea");
+
+const changeCursor = () => {
+  cursor.style.width = "2px";
+  cursor.style.height = "22px";
+  cursor.style.borderRadius = "0";
+};
+
+textfieldsAndInputs.forEach((element) => {
+  element.addEventListener("mouseenter", changeCursor);
   element.addEventListener("mouseleave", resetCursor);
 });
 

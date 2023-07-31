@@ -16,6 +16,11 @@ img {
       outline: none !important;
 }
 
+textarea:hover,
+input:hover {
+      cursor: none;
+}
+
 .cursor {
       position: absolute;
       height: 15px;
@@ -25,6 +30,7 @@ img {
       z-index: 10;
       transition: width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
       pointer-events: none;
+
 
 }
 
@@ -50,10 +56,14 @@ a:hover {
       cursor: none;
 }
 
+button:hover {
+      cursor: none;
+}
+
 body {
       background-color: #8EB4FD;
       transition: background-color 0.3s ease-in-out;
-      cursor: default;
+      cursor: none;
 
 }
 
@@ -505,9 +515,6 @@ body::-webkit-scrollbar {
       -webkit-text-stroke: 1px black;
 }
 
-.description-outlines:hover {
-      cursor: crosshair;
-}
 
 .about-description {
       margin-left: calc(4rem + 5vw);
@@ -897,7 +904,7 @@ body::-webkit-scrollbar {
 
 .button-ab:hover {
       background-color: rgba(38, 215, 250, 0.3);
-      cursor: pointer;
+
 }
 
 .button-ab:active {
@@ -1285,13 +1292,13 @@ body::-webkit-scrollbar {
 }
 
 .contact-section__main-section button:hover {
-      cursor: pointer;
+
       background-color: #faf126;
       color: #F46265;
 }
 
 .contact-section__main-section button:active {
-      cursor: pointer;
+
       background-color: #faf126;
       color: #F46265;
       box-shadow: inset 3px 3px #F46265;
@@ -1416,13 +1423,13 @@ body::-webkit-scrollbar {
 .checkbox-send button:hover {
       background-color: #faf126;
       color: #F46265;
-      cursor: pointer;
+
 }
 
 .checkbox-send button:active {
       background-color: #faf126;
       color: #F46265;
-      cursor: pointer;
+
       box-shadow: inset 1px 1px #F46265;
 }
 
@@ -1438,7 +1445,7 @@ body::-webkit-scrollbar {
 }
 
 .form_cross:hover {
-      cursor: pointer;
+
       scale: 1.1;
 
 }
@@ -1542,7 +1549,7 @@ body::-webkit-scrollbar {
 }
 
 .chatbot__cross:hover {
-      cursor: pointer;
+
       scale: 1.1;
 }
 
@@ -1743,7 +1750,7 @@ footer a {
 
 footer a:hover {
       scale: 1.05;
-      cursor: pointer;
+
 }
 
 
@@ -1753,7 +1760,4 @@ footer svg {
       transition: scale 0.2s ease-in;
 }
 
-footer svg:hover {
-
-      cursor: pointer;
-}
+footer svg:hover {}

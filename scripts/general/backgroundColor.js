@@ -22,7 +22,7 @@ const observer = new IntersectionObserver(
           cursor.style.backgroundColor = "#FAF126";
         } else if (sectionId == "contact") {
           body.style.backgroundColor = "#F46265";
-          cursor.style.backgroundColor = "#FAF126";
+          cursor.style.backgroundColor = "#31ABFD";
         }
       }
     });
