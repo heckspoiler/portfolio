@@ -1,6 +1,8 @@
 const cursor = document.querySelector(".cursor");
 const heart = document.querySelector(".landing-heart");
 
+//changing cursor position & heart color on hover
+
 heart.addEventListener("mouseenter", () => {
   cursor.classList.add("hovered");
 });
@@ -18,7 +20,7 @@ const moveCursor = (e) => {
   cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 };
 
-// FUNCTION HAS STILL TO BE FINISHED!!!!!! ADAPT COLORS TO SECTIONS
+//changing cursor size and shape by element hovered
 
 const growCursor = () => {
   cursor.style.width = "22px";

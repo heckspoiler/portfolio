@@ -3,10 +3,11 @@ const sections = document.querySelectorAll(".main-section");
 const eyes = document.querySelectorAll(".eyes");
 const cursor = document.querySelector(".cursor");
 
+// Check if the entry is intersecting and if it is, change background color
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      // Check if the entry is intersecting and if it is, change background color
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
         if (sectionId == "about") {

@@ -1,3 +1,7 @@
+// Purpose: server for portfolio website
+
+// define dependencies & variables
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
@@ -15,6 +19,8 @@ app.use(cors());
 app.use(express.json());
 console.log(prompt);
 
+//define transporter for mail sending with nodemailer
+
 let transporter = nodemailer.createTransport({
   service: "outlook",
   auth: {
@@ -22,6 +28,8 @@ let transporter = nodemailer.createTransport({
     pass: password,
   },
 });
+
+// define api request for chatbot & frontend communication
 
 app.get("/ask", async (req, res) => {
   const standardPrompt = prompt;
@@ -50,6 +58,8 @@ app.get("/ask", async (req, res) => {
     res.status(500).send("Error in processing request");
   }
 });
+
+// sending mail from contact form
 
 app.post("/form", async (req, res) => {
   console.log("Body Body BodY", req.body);
@@ -101,6 +111,8 @@ Your email:
     }
   });
 });
+
+// start server & check if it's working
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
