@@ -6,7 +6,7 @@ const projectLinks = document.querySelectorAll(
 const previewAnchor = document.querySelector(".projects__project-preview a");
 const links = document.querySelectorAll(".link-active");
 
-// array of objects containing project data
+// add image to project preview by clicking the link
 
 let videoElement = null;
 let projectsImage = projectsPreview.querySelector("img");
@@ -37,6 +37,8 @@ projectLinks.forEach((projectLink) => {
   });
 });
 
+// add video element to project preview by entering the image
+
 projectsPreview.addEventListener("mouseenter", (e) => {
   // add video element if it doesn't exist
   projectsArray.forEach((project) => {
@@ -58,6 +60,8 @@ projectsPreview.addEventListener("mouseenter", (e) => {
     }
   });
 });
+
+// Remove video element on mouseleave
 
 projectsPreview.addEventListener("mouseleave", (e) => {
   if (videoElement) {

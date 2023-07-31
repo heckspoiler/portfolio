@@ -18,6 +18,8 @@ import { sectionTextFieldAutomation } from "./actionTextField.js";
 
 let cubeArray = [];
 
+// creating cubes for each skill and then position them on mouse click
+
 const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
   const delay = 80;
   setTimeout(() => {
@@ -52,6 +54,8 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
         );
       };
 
+      // using gsap to animate cubes
+
       cubeArray.forEach((cube) => {
         gsap.to(cube, {
           duration: 2,
@@ -64,6 +68,8 @@ const createCubesForSection = function (sectionElement, numCubes, cubeClass) {
 };
 
 let hasBeenInView = false;
+
+// using intersection observer to trigger the animation and append classes to each cube, making sure animation doesn't trigger again and then giving them new positions
 
 export const observer = new IntersectionObserver(
   (entries) => {

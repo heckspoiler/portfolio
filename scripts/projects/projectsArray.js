@@ -1,3 +1,5 @@
+// array of objects with project data
+
 const projectArray = [
   {
     alt: "sinecloud",

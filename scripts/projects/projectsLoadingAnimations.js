@@ -5,6 +5,8 @@ const listItems = document.querySelectorAll(
 );
 const projectsPreview = document.querySelector(".projects__project-preview");
 
+// observe projectsSection to add animations when visible, loading animations project sections
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

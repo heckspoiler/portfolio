@@ -10,6 +10,8 @@ const fieldParagraph = document.querySelector(
 
 const buttons = document.querySelectorAll(".button-ab");
 
+// changing innerHTML of actionTextField to guide user towards button
+
 export const sectionTextFieldAutomation = () => {
   actionTextField.style.opacity = 1;
   setTimeout(() => {
@@ -21,13 +23,7 @@ export const sectionTextFieldAutomation = () => {
   }, 5500);
 };
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       sectionTextFieldAutomation();
-//     }
-//   });
-// });
+// removing field after clicking ab-button
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {

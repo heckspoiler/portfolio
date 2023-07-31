@@ -1,9 +1,10 @@
 const sections = document.querySelectorAll(".landing-section, .about-section");
 
+// Check if the entry is intersecting
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      // Check if the entry is intersecting
       let delay = 80;
       const allElements = entry.target.querySelectorAll(
         "h2, h3, h4, p, span, div, a, img, button, svg"
@@ -18,7 +19,7 @@ const observer = new IntersectionObserver(
             element.style.transition =
               "opacity 0.3s ease-in-out, transform 0.3s ease-in-out";
             element.style.transform = "translateY(0)";
-          }, delay * (index + 1) + 250); // Apply the delay based on the index
+          }, delay * (index + 1) + 250); // "waterfall" delay by increasing every item by 250ms
         });
       } else {
         allElements.forEach((element) => {

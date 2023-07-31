@@ -10,6 +10,8 @@ const descriptionTechnologies = document.querySelector(
   ".projects__technologies"
 );
 
+// add description to project preview by clicking the link from projectsArray
+
 projectLinks.forEach((projectLink) => {
   projectLink.addEventListener("click", (e) => {
     const dataProject = e.currentTarget.dataset.project;
@@ -21,6 +23,8 @@ projectLinks.forEach((projectLink) => {
     });
   });
 });
+
+// observe projectsPreview to remove description when not visible
 
 const observer = new IntersectionObserver(
   (entries) => {
