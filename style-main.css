@@ -747,6 +747,7 @@ body::-webkit-scrollbar {
       font-family: "Nohemi Regular";
       padding-left: 7vw;
       margin-top: -50px;
+      z-index: 1;
 
 
 }
