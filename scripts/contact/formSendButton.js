@@ -8,6 +8,8 @@ const formSendButton = document.querySelector("#form_send-button");
 const buttonForm = document.querySelector(".contact-button");
 const timeout = 2000;
 
+// sending form to backend and then to email
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -35,6 +37,8 @@ form.addEventListener("submit", (event) => {
     });
 });
 
+// changing content of button after sending form
+
 formSendButton.addEventListener("click", () => {
   form.classList.remove("form-visible");
   buttonForm.innerHTML = "<h3>licking the stamp...</h3>";
@@ -43,7 +47,7 @@ formSendButton.addEventListener("click", () => {
   formEmail.innerHTML = "";
   // formSelect.innerHTML = "";
   formMessage.innerHTML = "";
-setTimeout(() => {
+  setTimeout(() => {
     buttonForm.innerHTML = "sent!";
   }, timeout);
   setTimeout(() => {

@@ -10,6 +10,8 @@ const chatbot = document.querySelector(".contact-section__chatbot-container");
 const charlybotContainer = document.querySelector(".charlybot_container");
 const timeout = 2000;
 
+// showing form after clicking contact button, changing innerHTML of contact button
+
 buttonForm.addEventListener("click", () => {
   buttonForm.innerHTML = "<h3>sharpening the pencil...</h3";
   buttonForm.classList.add("button-resize");
@@ -26,6 +28,8 @@ buttonFormClose.addEventListener("click", () => {
     buttonForm.innerHTML = "drop me a line!";
   }, timeout);
 });
+
+// same for chatbot button
 
 buttonChat.addEventListener("click", () => {
   buttonChat.innerHTML = "<h3>initializing...</h3";

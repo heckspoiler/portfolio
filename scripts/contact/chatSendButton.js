@@ -3,12 +3,16 @@ const chatContainer = document.querySelector(".chatbot__messages");
 const chatInput = document.querySelector(".chatbot__input-field textarea");
 const textfieldCount = document.getElementById("chatbot__numbers");
 
+// defining enter as send option too
+
 chatInput.addEventListener("keydown", function (event) {
   if (event.key == "Enter" && !event.shiftKey) {
     event.preventDefault();
     sendButton.click();
   }
 });
+
+// sending user input to the chatbot and fetching answer
 
 const askQuestion = (question) => {
   fetch(`http://localhost:3000/ask?q=${question}`)
@@ -19,6 +23,8 @@ const askQuestion = (question) => {
     })
     .catch((error) => console.log(error));
 };
+
+//displaying answer of chatbot in the chat field
 
 function displayAnswer(answer) {
   let chatAnswer = document.createElement("div");
@@ -41,7 +47,11 @@ function displayAnswer(answer) {
   chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
+// changing placeholder text after first click, defining variable for first click
+
 let firstClick = 0;
+
+// adding user input to the UI/chat field & changing the placeholder based on how many messages have been sent
 
 sendButton.addEventListener("click", () => {
   if (chatInput.value) {

@@ -2,6 +2,8 @@ const sections = document.querySelectorAll(".main-section");
 const sectionIndicator = document.querySelectorAll(".list-object");
 const currentSection = document.querySelector("#current-section");
 
+// defining config object for each section to be called in the observer
+
 const config = {
   about: () => {
     sectionIndicator[0].style.backgroundColor = "#31ABFD";
@@ -30,6 +32,8 @@ const config = {
     sectionIndicator[3].style.backgroundColor = "#FAF126";
   },
 };
+
+// intersection observer for changes
 
 const observer = new IntersectionObserver(
   (entries) => {

@@ -39,9 +39,6 @@ sections.forEach((section) => observer.observe(section));
 // iris movement following the cursor
 
 const moveEye = (tag, mouseX, mouseY) => {
-  //   tag.style.top = `${mouseY}px`;
-  //   tag.style.left = `${mouseX}px`;
-
   // center of the eye
 
   const eyeMidX = tag.getBoundingClientRect().left;
