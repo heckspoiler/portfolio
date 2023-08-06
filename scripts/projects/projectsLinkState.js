@@ -8,6 +8,7 @@ const previewAnchor = document.querySelector(".projects__project-preview a");
 const descriptionField = document.querySelector(
   ".projects-section__description-field"
 );
+const arrowContainer = document.querySelector(".arrow-container");
 
 // changing position and color of link and before element
 
@@ -24,7 +25,14 @@ const linkStateChange = (clickedLink) => {
 projectLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     linkStateChange(event.target);
-    descriptionField.classList.add("description-field-visible");
+    if (!descriptionField.classList.contains("description-field-visible")) {
+      arrowContainer.style.backgroundColor = "#FC1616";
+      arrowContainer.style.left = "0px";
+      setTimeout(() => {
+        arrowContainer.style.backgroundColor = "#FFEA29";
+      }, 2000);
+      descriptionField.classList.add("description-field-visible");
+    }
   });
 });
 

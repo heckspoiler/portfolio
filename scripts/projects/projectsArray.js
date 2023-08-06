@@ -2,11 +2,13 @@
 
 const projectArray = [
   {
+    projectName: "sinecloud",
     alt: "sinecloud",
     imgUrl: "./assets/images/projects/testimages/sinecloud.jpg",
     videoUrl: "",
     link: "www.google.ch",
     description: "Soundcloud clone with my favorite radio stations",
+    descriptionLong: "",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>RESTful API</p>
@@ -20,11 +22,13 @@ const projectArray = [
     </svg></a>`,
   },
   {
+    projectName: "station daw",
     alt: "station",
     imgUrl: "./assets/images/projects/testimages/station_daw.png",
     videoUrl: "",
     link: "https://64b8fa5eae17a45b2c15a874--papaya-macaron-4ea9a6.netlify.app/",
     description: "Landing page for a DAW",
+    descriptionLong: "",
     technologies: `<p>Vanilla Javascript</p>
     <div class="decor-dot"></div>
     <p>HTML</p>
@@ -37,11 +41,13 @@ const projectArray = [
     `,
   },
   {
+    projectName: "shopify",
     alt: "shopify",
     imgUrl: "./assets/images/projects/testimages/shopify.jpg",
     videoUrl: "",
     link: "",
     description: "A shopify app",
+    descriptionLong: "",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>Tailwind CSS</p>
@@ -56,11 +62,13 @@ const projectArray = [
     `,
   },
   {
+    projectName: "space club",
     alt: "spaceclub",
     imgUrl: "./assets/images/projects/testimages/spaceclub.png",
     videoUrl: "",
     link: "",
     description: "A homepage for an imaginary space travel company",
+    descriptionLong: "",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>Next.js</p>
@@ -73,11 +81,13 @@ const projectArray = [
     `,
   },
   {
+    projectName: "milky mood",
     alt: "milkymood",
     imgUrl: "./assets/images/projects/testimages/milkymood.jpg",
     videoUrl: "",
     link: "",
     description: "A mood tracker app for iOS and Android",
+    descriptionLong: "",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>CSS</p>
