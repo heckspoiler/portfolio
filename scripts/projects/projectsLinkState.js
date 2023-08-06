@@ -5,6 +5,9 @@ const projectLinks = document.querySelectorAll(
 );
 const projectsPreview = document.querySelector(".projects__project-preview");
 const previewAnchor = document.querySelector(".projects__project-preview a");
+const descriptionField = document.querySelector(
+  ".projects-section__description-field"
+);
 
 // changing position and color of link and before element
 
@@ -21,6 +24,7 @@ const linkStateChange = (clickedLink) => {
 projectLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     linkStateChange(event.target);
+    descriptionField.classList.add("description-field-visible");
   });
 });
 
