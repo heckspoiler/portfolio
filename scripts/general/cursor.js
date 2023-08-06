@@ -28,8 +28,8 @@ const growCursor = () => {
 };
 
 const resetCursor = () => {
-  cursor.style.width = "15px";
-  cursor.style.height = "15px";
+  cursor.style.width = "10px";
+  cursor.style.height = "10px";
   cursor.style.borderRadius = "50%";
 };
 
