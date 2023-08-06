@@ -8,7 +8,7 @@ const projectArray = [
     videoUrl: "",
     link: "www.google.ch",
     description: "Soundcloud clone with my favorite radio stations",
-    descriptionLong: "",
+    descriptionLong: "sinecloud",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>RESTful API</p>
@@ -28,7 +28,8 @@ const projectArray = [
     videoUrl: "",
     link: "https://64b8fa5eae17a45b2c15a874--papaya-macaron-4ea9a6.netlify.app/",
     description: "Landing page for a DAW",
-    descriptionLong: "",
+    descriptionLong:
+      "station daw is a landing page for a digital audio workstation. It was created as a part of a course on Udemy.",
     technologies: `<p>Vanilla Javascript</p>
     <div class="decor-dot"></div>
     <p>HTML</p>
@@ -47,7 +48,7 @@ const projectArray = [
     videoUrl: "",
     link: "",
     description: "A shopify app",
-    descriptionLong: "",
+    descriptionLong: "shopify app",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>Tailwind CSS</p>
@@ -68,7 +69,8 @@ const projectArray = [
     videoUrl: "",
     link: "",
     description: "A homepage for an imaginary space travel company",
-    descriptionLong: "",
+    descriptionLong:
+      "spaceclub is a homepage for an imaginary space travel company. It was created as a part of a course on Udemy. It is a responsive website with a mobile-first approach. It was created using HTML, CSS, and JavaScript.",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>Next.js</p>
@@ -87,7 +89,7 @@ const projectArray = [
     videoUrl: "",
     link: "",
     description: "A mood tracker app for iOS and Android",
-    descriptionLong: "",
+    descriptionLong: "milky mood",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>CSS</p>

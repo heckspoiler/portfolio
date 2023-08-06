@@ -10,6 +10,13 @@ const descriptionTechnologies = document.querySelector(
   ".projects__technologies"
 );
 
+const projectsDescriptionTitle = document.querySelector(
+  ".projects-section__description-field h3"
+);
+const projectsDescriptionPara = document.querySelector(
+  ".projects-section__description-field p"
+);
+
 // add description to project preview by clicking the link from projectsArray
 
 projectLinks.forEach((projectLink) => {
@@ -19,6 +26,8 @@ projectLinks.forEach((projectLink) => {
       if (dataProject === project.alt) {
         descriptionTitle.textContent = project.description;
         descriptionTechnologies.innerHTML = project.technologies;
+        projectsDescriptionTitle.textContent = project.projectName;
+        projectsDescriptionPara.textContent = project.descriptionLong;
       }
     });
   });
@@ -32,6 +41,8 @@ const observer = new IntersectionObserver(
       if (!entry.isIntersecting) {
         descriptionTitle.textContent = "";
         descriptionTechnologies.innerHTML = "";
+        projectsDescriptionTitle.textContent = "click on project to see more";
+        projectsDescriptionPara.textContent = "";
       }
     });
   },
