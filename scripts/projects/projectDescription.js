@@ -41,8 +41,9 @@ const observer = new IntersectionObserver(
       if (!entry.isIntersecting) {
         descriptionTitle.textContent = "";
         descriptionTechnologies.innerHTML = "";
-        projectsDescriptionTitle.textContent = "click on project to see more";
-        projectsDescriptionPara.textContent = "";
+        projectsDescriptionTitle.textContent = "quite empty here...";
+        projectsDescriptionPara.textContent =
+          "click on a project to get more information";
       }
     });
   },
