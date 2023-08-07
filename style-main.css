@@ -840,6 +840,7 @@ body::-webkit-scrollbar {
       align-items: center;
       font-style: italic;
       opacity: 1;
+      padding-top: 10px;
 
 
 }
@@ -897,7 +898,7 @@ body::-webkit-scrollbar {
       -webkit-backdrop-filter: blur(1px); */
 }
 
-.project-video:hover {}
+
 
 /* -------------------- skills section --------------------------- */
 

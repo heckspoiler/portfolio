@@ -1,0 +1,45 @@
+@media screen and (min-width: 1000px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 61vw;
+      }
+
+      .arrow-container {
+            position: relative;
+            height: 5rem;
+            width: 2.5rem;
+            background-color: #FFEA29;
+            position: absolute;
+            left: 40px;
+            top: 0;
+            margin-left: -40px;
+            border: 1px solid black;
+            margin-top: -1px;
+            z-index: 4;
+            border-right: none;
+            transition: background-color 0.6s ease-in-out left 0.5s ease-in-out;
+      }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 74vw;
+      }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 85vw;
+      }
+
+}
