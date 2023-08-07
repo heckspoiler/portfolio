@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
 
 
       /* navbar side */
@@ -480,11 +480,11 @@
       }
 
       .link-active::before {
-            margin-left: 0 !important;
+            margin-left: -51vw !important;
       }
 
       .projects_subsection-right {
-            height: 25rem;
+            height: 28rem;
             width: 60rem;
             display: flex;
             flex-direction: column;
@@ -492,6 +492,7 @@
             align-items: center;
             margin-left: 5vw;
             margin-top: 15vh;
+            border: 1px solid black;
 
 
       }
