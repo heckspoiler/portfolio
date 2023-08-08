@@ -846,20 +846,6 @@
             justify-items: flex-start;
       }
 
-      .power-text {
-            font-size: 0.4em;
-            margin-top: 10px;
-      }
-
-      .skills-section h2 {
-            font-family: "Nohemi Semibold";
-            font-size: calc(2rem + 6vw);
-            margin-top: 10px;
-            color: #FAF126;
-            margin-left: -10vw;
-            opacity: 0;
-            transition: margin-left 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      }
 
 
 
@@ -876,18 +862,15 @@
       }
 
       .skills-container__subcontainer {
-            height: 100%;
-            display: flex;
-            justify-content: center;
+
+            justify-content: left;
+            padding-left: 10vw;
       }
 
       .skills-pair {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
+
             gap: 2vw;
-            transform: translateX(-15%);
-            opacity: 0;
+
             transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 
       }
@@ -903,121 +886,26 @@
       }
 
       .skills-level-container {
-            position: relative;
+
             width: 2vw;
             height: calc(12rem + 7vw);
-            border: 1px solid #FAF126;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+
       }
 
-
-
-      .cube {
-            height: 10%;
-            width: 100%;
-            background-color: yellow;
-            position: absolute;
-            left: 50px;
-      }
-
-      .cube-test {
-            height: 20px;
-            width: 20px;
-            background-color: #faf126;
-            position: absolute;
-            transition: opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1), left 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), top 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
 
       .tailwind {
-            padding-bottom: 1.6rem;
+            padding-bottom: 1.1rem;
+            gap: 4vw !important;
       }
 
-      .skills-container__subcontainer h3 {
-            writing-mode: vertical-rl;
-            text-orientation: sideways;
-            white-space: nowrap;
-            color: #FAF126;
-            margin-top: 18vw;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            opacity: 0;
-            transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      }
 
       .subtitles-loaded {
             opacity: 1 !important;
       }
 
-      .programming {
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            white-space: nowrap;
-            transform: rotate(180deg);
-            margin-top: 0;
-            margin-bottom: 18vw;
-      }
-
-      .skills-section__dots-upper-mid {
-            height: 8vw;
-            width: 10vw;
-            position: absolute;
-            left: calc(4rem + 23vw);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-            top: 20px;
-
-      }
-
-      .dot-upper-mid {
-            height: 1vw;
-            width: 1vw;
-            border-radius: 50%;
-      }
 
 
 
-      .dot-upper-mid:nth-of-type(2) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(3) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(4) {
-            background-color: #faf126
-      }
-
-
-      .dot-upper-mid:nth-of-type(12) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(13) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(14) {
-            background-color: #faf126
-      }
-
-
-      .dot-upper-mid:nth-of-type(23) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(24) {
-            background-color: #faf126
-      }
-
-      .dot-upper-mid:nth-of-type(22) {
-            background-color: #faf126
-      }
 
 
 }
