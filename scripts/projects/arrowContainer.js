@@ -12,3 +12,5 @@ arrowContainer.addEventListener("click", () => {
   arrow.classList.toggle("arrow-rotated");
   technologies.classList.toggle("technologies-hidden");
 });
+
+console.log(window.innerWidth);
