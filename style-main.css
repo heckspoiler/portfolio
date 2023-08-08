@@ -651,6 +651,7 @@ body::-webkit-scrollbar {
       margin-top: 40px;
       text-align: center;
       font-family: "Arial";
+      font-size: 0.8rem;
 }
 
 .projects-section h2 {

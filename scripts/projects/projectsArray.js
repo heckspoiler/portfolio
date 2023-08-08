@@ -8,7 +8,8 @@ const projectArray = [
     videoUrl: "",
     link: "www.google.ch",
     description: "Soundcloud clone with my favorite radio stations",
-    descriptionLong: "sinecloud",
+    descriptionLong:
+      "Music's got tons of faces, but most of them get buried in the crowd. Thanks to those big-shot music platforms with their fancy algorithms that seem to cozy up to the big labels, so many rad artists and tunes get drowned out. This makes musical diversity sound like some old-school myth for most mainstream listeners. Finding a track that truly vibes differently? Tough gig. Enter sinecloud. This is our little corner of the web for all the sound junkies and synth enthusiasts to geek out and share their beats. We tap into the soundcloud API to fetch the most recent tracks from 5 radio stations (for now) and combine them in a wild mix of genres. We're running on that popular javascript baddie, react, for our front-end scene and got express.js rocking the backstage. With this, we can at least try to escape the numbness of the cultural industry and make Adorno proud. ",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>RESTful API</p>
@@ -29,7 +30,7 @@ const projectArray = [
     link: "https://64b8fa5eae17a45b2c15a874--papaya-macaron-4ea9a6.netlify.app/",
     description: "Landing page for a DAW",
     descriptionLong:
-      "station daw is a landing page for a digital audio workstation. It was created as a part of a course on Udemy.",
+      "Now that we already have established an application that feeds you with new earfood in the shape of decent tunes, we also need to help the musicians that try to make us happy and deliver us those crispy fried nuggets we're craving for. In comes: Station DAW, a newly founded digital audio workstation delivered straight onto your personal computer, whatever you're using. While we've outsourced the actual development of our new baby to the most competent developers available, we've buckled down and already created the landing page so musicians-in-the-making and established pros can get a first glance at what's to expect. This landing page was built using all Vanilla Ice Ice Baby: HTML, CSS and pure Javascript sometimes are cooler than the latest hype!",
     technologies: `<p>Vanilla Javascript</p>
     <div class="decor-dot"></div>
     <p>HTML</p>
@@ -70,7 +71,7 @@ const projectArray = [
     link: "",
     description: "A homepage for an imaginary space travel company",
     descriptionLong:
-      "spaceclub is a homepage for an imaginary space travel company. It was created as a part of a course on Udemy. It is a responsive website with a mobile-first approach. It was created using HTML, CSS, and JavaScript.",
+      "Music here, music there, music everywhere! Not quite, apparently sound waves don't travel in space - so if you're tired of hearing about music, why not treating yourself with something not many people have done before? Space Club offers space travels to places even further away then Australia, and if you're from Australia, even further away than Switzerland! The space club homepage contains some of the destinations possible, but make sure to quit your job in advance because you're not coming back anytime soon! By the way, it's not advised to get out of your way confirm our statement about the sound waves, keep your helmet on all the time please. This website is a frontendmentor.io challenge (intermediate-level) and was crafted with Next.js and TailwindCSS, utilizing a modular design strategy for the Tailwind components. I mostly felt comfortable doing it, but for whatever reason I wasn't able to add the fonts required, neither via google fonts nor via font-face. ",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
     <p>Next.js</p>
