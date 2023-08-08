@@ -385,6 +385,7 @@ body::-webkit-scrollbar {
       top: 0;
       left: 0;
       scale: 0.1;
+      z-index: 10;
 }
 
 
@@ -393,17 +394,18 @@ body::-webkit-scrollbar {
       border-radius: 80px;
       scale: 0.4;
       margin-top: -10vh;
-      margin-left: 52vw;
+      margin-left: 20vw;
 
 }
 
 .landing-sections:nth-of-type(2) img {
       position: absolute;
       top: 0;
+      left: 0;
       border-radius: 80px;
       scale: 0.1;
-      margin-top: -85vh;
-      margin-left: calc(30vw - 2rem);
+      margin-top: -120vh;
+      margin-left: -20vw;
       border: 1px solid black;
       transform: rotate(10deg);
 
@@ -414,17 +416,18 @@ body::-webkit-scrollbar {
       top: 0;
       border-radius: 80px;
       scale: 0.1;
-      margin-top: -45vh;
-      margin-left: -15vw;
+      margin-top: -100vh;
+      margin-left: -20vw;
 
 }
 
 .landing-sections:nth-of-type(4) img {
       top: 0;
+      left: 0;
       border-radius: 80px;
       scale: 0.25;
-      margin-top: 50vh;
-      margin-left: 50vw;
+      margin-top: -30vh;
+      margin-left: -30vw;
       transform: scaleX(-1);
 
 }
