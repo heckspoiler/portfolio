@@ -1513,6 +1513,7 @@ body::-webkit-scrollbar {
       text-align: center;
       display: flex;
       align-items: center;
+      opacity: 1 !important;
       justify-content: center;
       transition: color 0.2s ease-in, background-color 0.2s ease-in box-shadow 0.1s ease-in;
 }
@@ -1818,6 +1819,7 @@ body::-webkit-scrollbar {
       display: flex;
       align-items: center;
       justify-content: center;
+      opacity: 1 !important;
 }
 
 

@@ -927,5 +927,67 @@
             transition: color 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease, border 0.2s ease, height 0.8s cubic-bezier(0.23, 1, 0.320, 1), width 0.8s cubic-bezier(0.23, 1, 0.320, 1), opacity 0.4s ease-in-out, margin-left 0.2s ease-in-out;
       }
 
+      .checkbox-send {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+      }
+
+      .checkbox-send section {
+            display: flex;
+            width: 20vw;
+            font-family: "Nohemi Regular";
+            font-size: 0.7rem;
+            gap: 0px;
+            align-items: center;
+
+      }
+
+      .checkbox-send label {
+            width: 15rem !important;
+            text-align: left;
+            color: #faf126;
+      }
+
+      .checkbox-send input {
+            height: 12px;
+            width: 12px;
+            display: flex;
+      }
+
+
+      .checkbox-send button {
+            background-color: transparent;
+            z-index: 10;
+            border: 2px solid #faf126;
+            color: #faf126;
+            font-family: "Nohemi Regular";
+            font-size: 0.6rem;
+            padding: 10px 0;
+            width: calc(1.5rem + 4vw);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            opacity: 1 !important;
+            justify-content: center;
+            transition: color 0.2s ease-in, background-color 0.2s ease-in box-shadow 0.1s ease-in;
+      }
+
+      .chatbot__send-field button {
+            background-color: transparent;
+            border: 2px solid #FAF126;
+            width: calc(2rem + 1.5vw);
+            padding: 5px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            margin-left: 15px;
+            margin-bottom: 5px;
+            font-family: "Nohemi Regular";
+            color: #faf126;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1 !important;
+      }
 
 }
