@@ -1864,7 +1864,7 @@ footer svg {
       opacity: 0;
       margin-left: -6%;
       transition: opacity 0.4s ease-in-out, margin-left 0.4s ease-in-out, transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
-      transform: rotate(-145deg);
+      transform: rotate(145deg);
 }
 
 footer svg:hover {}
