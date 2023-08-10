@@ -26,7 +26,7 @@ projectLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     linkStateChange(event.target);
     if (!descriptionField.classList.contains("description-field-visible")) {
-      arrowContainer.style.backgroundColor = "#FC1616";
+      arrowContainer.style.backgroundColor = "#76D0FA";
       arrowContainer.style.left = "0px";
       setTimeout(() => {
         arrowContainer.style.backgroundColor = "#FFEA29";
