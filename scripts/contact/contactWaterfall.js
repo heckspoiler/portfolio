@@ -23,7 +23,7 @@ const observer = new IntersectionObserver(
       } else {
         title.classList.remove("title-loaded");
         items.forEach((item) => {
-          item.classList.remove("list-item-loaded");
+          item.classList.remove("contact-visible");
         });
       }
     });

@@ -452,7 +452,9 @@ body::-webkit-scrollbar {
 
 }
 
+
 .about-upper-content-container {
+      position: relative;
       display: flex;
       align-items: center;
       gap: calc(0.5rem + 5vw);
@@ -1451,7 +1453,7 @@ body::-webkit-scrollbar {
       border: 3px solid #faf126;
       color: #FAF126;
       padding: 10px;
-      font-family: "Nohemi Regular";
+      font-family: "Arial";
       width: 75%;
       font-size: 0.8rem;
       transition: border 0.5s ease-in-out;
@@ -1483,7 +1485,7 @@ body::-webkit-scrollbar {
 .checkbox-send section {
       display: flex;
       width: 10vw;
-      font-family: "Nohemi Regular";
+      font-family: "Arial";
       font-size: 0.7rem;
       gap: 2px;
       align-items: center;
@@ -1709,7 +1711,7 @@ body::-webkit-scrollbar {
 
 .user_message-container h5 {
       text-align: left;
-      font-family: "Nohemi Regular";
+      font-family: "Arial";
       align-self: flex-end;
       padding-right: 15px;
       padding: 1px;
@@ -1722,7 +1724,7 @@ body::-webkit-scrollbar {
       padding: 10px;
       font-size: 0.8rem;
       text-align: left;
-      font-family: "Nohemi Regular";
+      font-family: "Arial";
       align-self: flex-end;
       border: 2px solid #FAF126;
       color: #faf126;
@@ -1776,7 +1778,7 @@ body::-webkit-scrollbar {
       width: 100%;
       height: 90%;
       padding: 10px;
-      font-family: "Nohemi Regular";
+      font-family: "Arial";
       color: #FAF126;
       letter-spacing: 1.3px;
       font-size: 0.9rem;
@@ -1800,7 +1802,7 @@ body::-webkit-scrollbar {
 }
 
 .chatbot__send-field p {
-      font-family: "Nohemi Medium";
+      font-family: "Arial";
       font-size: 0.5rem;
       color: #FAF126;
 }
