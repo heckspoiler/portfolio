@@ -28,7 +28,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.8 }
 );
 
 observer.observe(contactsSection);
