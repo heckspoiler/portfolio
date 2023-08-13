@@ -31,4 +31,6 @@ const observer = new IntersectionObserver(
   { threshold: 0.8 }
 );
 
+
+
 observer.observe(contactsSection);
