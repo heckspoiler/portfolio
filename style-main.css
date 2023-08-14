@@ -7,6 +7,10 @@
 
 }
 
+.phone-overlay {
+      display: none;
+}
+
 svg:hover {
       cursor: none !important;
 }

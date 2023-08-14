@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+      .phone-overlay {
+            position: absolute;
+            display: block;
+            z-index: 120;
+            background-color: white;
+            padding: 40px;
+      }
+
+      body {
+            background-color: transparent !important;
+      }
+
+      .phone-overlay h1 {
+            font-family: "Nohemi Medium";
+            height: 100%;
+            font-size: 6rem;
+            line-height: 1.4;
+            
+
+      }
+
+      #fullPage {
+            display: none;
+      }
+
+      .landing-section {
+            display: none;
+      }
+
+      .eyes {
+            display: none;
+      }
+
+      .header {
+            display: none;
+      }
+
+}
