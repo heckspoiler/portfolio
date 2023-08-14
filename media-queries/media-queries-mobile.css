@@ -7,15 +7,18 @@
             align-items: center;
             justify-content: center;
             background: rgb(164, 255, 222);
-            background: linear-gradient(174deg, rgba(164, 255, 222, 1) 0%, rgba(246, 246, 126, 1) 24%, rgba(100, 240, 96, 1) 40%, rgba(234, 8, 64, 1) 61%, rgba(49, 174, 253, 1) 79%);
-            background-size: cover;
             overflow-x: hidden;
+            transition: background-color 0.4s ease-in-out;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: auto;
 
       }
 
       body {
-            background-color: white;
             overflow-x: hidden;
+            background: transparent;
       }
 
 
@@ -29,13 +32,14 @@
       .overlay-title {
             font-family: "Nohemi Medium";
             height: 100%;
-            font-size: calc(2rem + 4vw);
-            width: 50%;
-            line-height: 1.4;
+            font-size: calc(1rem + 6vw);
+            width: 100%;
+            line-height: 1.5;
             max-width: 767px !important;
-
-            color: orange;
-            mix-blend-mode: difference;
+            padding: 100px;
+            backdrop-filter: blur(40px);
+            transition: color 0.4s ease-in-out;
+            color: #711EF8;
 
       }
 
@@ -48,7 +52,13 @@
       }
 
       .eyes {
-            display: none;
+
+            z-index: 140;
+            scale: 1.4;
+      }
+
+      .eyes-right {
+            margin-left: 30px;
       }
 
       .header {
