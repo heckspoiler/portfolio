@@ -1,22 +1,41 @@
 @media screen and (max-width: 767px) {
       .phone-overlay {
-            position: absolute;
-            display: block;
+
+            display: flex;
             z-index: 120;
-            background-color: white;
-            padding: 40px;
+            max-width: 767px !important;
+            align-items: center;
+            justify-content: center;
+            background: rgb(164, 255, 222);
+            background: linear-gradient(174deg, rgba(164, 255, 222, 1) 0%, rgba(246, 246, 126, 1) 24%, rgba(100, 240, 96, 1) 40%, rgba(234, 8, 64, 1) 61%, rgba(49, 174, 253, 1) 79%);
+            background-size: cover;
+            overflow-x: hidden;
+
       }
 
       body {
-            background-color: transparent !important;
+            background-color: white;
+            overflow-x: hidden;
       }
 
-      .phone-overlay h1 {
+
+
+      .cursor,
+      .list-object {
+
+            display: none;
+      }
+
+      .overlay-title {
             font-family: "Nohemi Medium";
             height: 100%;
-            font-size: 6rem;
+            font-size: calc(2rem + 4vw);
+            width: 50%;
             line-height: 1.4;
-            
+            max-width: 767px !important;
+
+            color: orange;
+            mix-blend-mode: difference;
 
       }
 
