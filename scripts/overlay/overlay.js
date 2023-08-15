@@ -1,7 +1,31 @@
 const overlayBackground = document.querySelector(".phone-overlay");
 const overlayText = document.querySelector(".overlay-title");
 const colors = ["#A4FFDE", "#FFEA29", "#A4FFDE", "#711EF8", "#F46265"];
-const textColors = ["#711EF8", "#F46265", "#711EF8", "#F46265", "#711EF8"];
+const textColors = ["#711EF8", "black", "#711EF8", "#FFEA29", "#FFEA29"];
+
+const text = overlayText.textContent;
+const spans = [];
+overlayText.innerHTML = "";
+
+for (let letter of text) {
+  const span = document.createElement("span");
+  span.textContent = letter;
+  span.style.transition =
+    "opacity 0.1s ease-in-out, margin-top 0.3s ease-in-out";
+  span.style.opacity = 0;
+  span.style.marginTop = `-30px`;
+  overlayText.appendChild(span);
+  spans.push(span);
+}
+
+window.addEventListener("load", () => {
+  spans.forEach((span, index) => {
+    setTimeout(() => {
+      span.style.opacity = 1;
+      span.style.marginTop = "0px";
+    }, index * 50 + 1000);
+  });
+});
 
 document.addEventListener("scroll", function () {
   let scrolled =

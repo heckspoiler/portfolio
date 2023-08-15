@@ -602,6 +602,12 @@ body::-webkit-scrollbar {
 
 }
 
+
+.project-image {
+      object-fit: cover;
+}
+
+
 .description-field-visible {
       opacity: 1;
 }
