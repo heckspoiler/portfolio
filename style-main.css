@@ -732,6 +732,15 @@ body::-webkit-scrollbar {
 
 }
 
+.listobject-span {
+      font-size: 0.5rem;
+      height: 100%;
+      vertical-align: top;
+      font-family: "Arial";
+      font-style: italic;
+
+}
+
 .list-item-loaded {
       transform: scale(1) rotate(0);
       width: 100%;
