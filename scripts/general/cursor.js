@@ -33,7 +33,9 @@ const resetCursor = () => {
   cursor.style.borderRadius = "50%";
 };
 
-const imagesAndLinks = document.querySelectorAll("img, a, button");
+const imagesAndLinks = document.querySelectorAll(
+  "img, a, button, .projects-github, .contact-cross"
+);
 
 imagesAndLinks.forEach((element) => {
   element.addEventListener("mouseenter", growCursor);

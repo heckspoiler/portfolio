@@ -29,7 +29,7 @@ projectLinks.forEach((link) => {
       arrowContainer.style.backgroundColor = "#76D0FA";
       arrowContainer.style.left = "0px";
       setTimeout(() => {
-        arrowContainer.style.backgroundColor = "#FFEA29";
+        arrowContainer.style.backgroundColor = "#29ffb4";
       }, 2000);
       descriptionField.classList.add("description-field-visible");
     }
