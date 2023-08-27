@@ -727,10 +727,10 @@ body::-webkit-scrollbar {
       margin-top: 20px;
       margin-left: 20px;
       border-bottom: 1px solid black;
-      transform: scale(0.6) rotate(25deg);
+      transform: scale(0.7) rotate(25deg);
       width: 60%;
       opacity: 0;
-      transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 }
 
