@@ -712,9 +712,11 @@ body::-webkit-scrollbar {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 100%;
+      height: auto;
       justify-content: space-between;
       padding: 40px 0;
+
+      gap: 10px;
 }
 
 .projects_subsection-left-listobject {
@@ -1484,7 +1486,7 @@ body::-webkit-scrollbar {
 .contact-section form input:focus,
 .contact-section form textarea:focus,
 .contact-section form select:focus {
-      border: 3px dashed #faf126;
+      border: 4px dashed #faf126;
       outline: none;
 }
 
