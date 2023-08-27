@@ -43,12 +43,12 @@ const projectArray = [
     `,
   },
   {
-    projectName: "shopify",
-    alt: "shopify",
-    imgUrl: "./assets/images/projects/testimages/shopify.jpg",
+    projectName: "chewstreet",
+    alt: "chewstreet",
+    imgUrl: "./assets/images/projects/testimages/chewstreet.png",
     videoUrl: "",
     link: "",
-    description: "A shopify app",
+    description: "A SaaS for Webdev Everything",
     descriptionLong: "shopify app",
     technologies: `<p>React</p>
     <div class="decor-dot"></div>
