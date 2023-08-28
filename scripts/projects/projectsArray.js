@@ -6,7 +6,7 @@ const projectArray = [
     alt: "sinecloud",
     imgUrl: "./assets/images/projects/testimages/sinecloud.jpg",
     videoUrl: "",
-    link: "www.google.ch",
+    link: "https://sinecloud.digital/",
     description: "Soundcloud clone with my favorite radio stations",
     descriptionLong:
       "Music's got tons of faces, but most of them get buried in the crowd. Thanks to those big-shot music platforms with their fancy algorithms that seem to cozy up to the big labels, so many rad artists and tunes get drowned out. This makes musical diversity sound like some old-school myth for most mainstream listeners. Finding a track that truly vibes differently? Tough gig. Enter sinecloud. This is our little corner of the web for all the sound junkies and synth enthusiasts to geek out and share their beats. We tap into the soundcloud API to fetch the most recent tracks from 5 radio stations (for now) and combine them in a wild mix of genres. We're running on that popular javascript baddie, react, for our front-end scene to make everything smooth and fast like a song by the Cure and got express.js rocking the backstage. With this, we can at least try to escape the numbness of the cultural industry and make Adorno proud. ",
