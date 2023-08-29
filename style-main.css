@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
 
 .click-me-h2 h2 {
       color: black;
-      text-shadow: 7px 7px 1px yellow;
+      text-shadow: 0px 0px 0px white;
       font-size: 3rem;
       -webkit-text-stroke: 1px black;
       transition: color 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), text-shadow 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), font-size 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
