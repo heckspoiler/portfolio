@@ -167,7 +167,10 @@
 
       .about-section {
             padding: 4rem 4rem 1rem 4rem;
-
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
       }
 
       .about-upper-content-container {
@@ -198,7 +201,7 @@
 
       .arrow-about {
             margin-left: calc(8rem + 25vw);
-            scale: 0.4;
+            scale: 0.7;
             margin-top: -1.8rem;
       }
 
@@ -211,7 +214,7 @@
 
       .hover-svg-laptop {
             margin-left: 15vw;
-            margin-top: calc(3.5rem + 25vw);
+            margin-top: calc(18.5rem + 25vw);
             scale: 0.6;
 
       }
@@ -382,19 +385,22 @@
 
       .projects_subsection {
 
-            height: 85%;
+            height: 100%;
 
       }
 
       .projects_subsection:nth-of-type(1) {
             width: 60%;
             padding: 40px;
-            height: 70% !important;
-            margin-top: 4rem;
+            height: 50% !important;
+            margin-top: 2rem;
+
+
       }
 
       .projects_subsection:nth-of-type(2) {
-            width: 140%;
+            width: 100%;
+            height: 100%;
       }
 
       .projects_subsection-left-list {
@@ -476,8 +482,8 @@
       }
 
       .projects_subsection-right {
-            height: 50%;
-            width: 40%;
+            height: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -502,6 +508,7 @@
             background-size: 60%;
             background-position: center;
             background-repeat: no-repeat;
+            margin-top: -40px;
 
 
 
