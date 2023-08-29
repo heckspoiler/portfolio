@@ -117,6 +117,6 @@ clickMe.addEventListener("mouseenter", () => {
       textOne.style.fontSize = "3.5rem";
       clickMeTitle.style.scale = "0";
       landingSection.style.backgroundColor = "#A4FFDE";
-    }, 6000);
+    }, 5800);
   }
 });
