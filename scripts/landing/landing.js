@@ -11,6 +11,7 @@ const clickMeTitle = document.querySelector(".click-me-h2 h2");
 const aboutSection = document.querySelector(".about-section");
 const magnetBlock = document.querySelector(".magnet-block");
 const textOne = document.querySelector(".landing-section__animation-text-one");
+const showMoreButton = document.querySelector(".landing-button");
 
 // random color changes on hover for paragraph container & display image on hover for paragraph container
 
@@ -63,9 +64,7 @@ const observer = new IntersectionObserver(
 
 observer.observe(landingSection);
 
-// heart pop up and button for going down
-
-textOne.addEventListener("click", () => {
+showMoreButton.addEventListener("click", () => {
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
   aboutSection.style.transform = "translateY(0)";
@@ -73,14 +72,19 @@ textOne.addEventListener("click", () => {
     "transform 1s cubic-bezier(0.5, 0, 0, 1) 0.1s";
 });
 
-clickMe.addEventListener("mouseenter", () => {
-  if (clickMeTitle.innerHTML != "That's wavy!") {
+let animationHasRun = false;
+
+const startingAnimation = () => {
+  if (!animationHasRun) {
+    animationHasRun = true;
+    clickMe.removeEventListener("mouseenter", startingAnimation);
+    clickMe.style.marginLeft = "20rem !important";
     clickMeTitle.innerHTML = "That's wavy!";
     clickMeTitle.style.color = "yellow";
     clickMeTitle.style.textShadow = "2px 2px 1px black";
     clickMeTitle.style.fontSize = "5rem";
     landingSection.style.backgroundColor = "yellow";
-
+    animationHasRun = true;
     setTimeout(() => {
       magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
       magnetBlock.style.left = "-4vw";
@@ -116,7 +120,43 @@ clickMe.addEventListener("mouseenter", () => {
       textOne.style.left = "0vw";
       textOne.style.fontSize = "3.5rem";
       clickMeTitle.style.scale = "0";
-      landingSection.style.backgroundColor = "#A4FFDE";
-    }, 5800);
+    }, 6200);
+
+    setTimeout(() => {
+      textOne.style.color = "yellow";
+      landingSection.style.backgroundColor = "rgb(0, 179, 255)";
+    }, 8200);
+
+    setTimeout(() => {
+      textOne.style.transition =
+        "webkit-text-stroke 1s cubic-bezier(0.5, 0, 0, 1), color 1s cubic-bezier(0.5, 0, 0, 1), text-shadow 1s cubic-bezier(0.5, 0, 0, 1)";
+      textOne.style.color = "#F46265";
+      landingSection.style.backgroundColor = "#F46265";
+      textOne.style.textShadow = "0px 0px 0px #F46265";
+      clickMeTitle.style.scale = "0";
+    }, 11000);
+
+    setTimeout(() => {
+      textOne.style.WebkitTextStroke = "0px";
+      showMoreButton.style.display = "block";
+    }, 11500);
+
+    setTimeout(() => {
+      showMoreButton.style.transition = "all 1s cubic-bezier(0.5, 0, 0, 1)";
+      showMoreButton.style.border = "3px solid black";
+    }, 12000);
+
+    setTimeout(() => {
+      showMoreButton.style.backgroundColor = "lightgrey";
+    }, 12200);
+
+    setTimeout(() => {
+      showMoreButton.style.marginLeft = "39px";
+      showMoreButton.style.marginTop = "-6px";
+      showMoreButton.style.boxShadow = "6px 6px 1px black";
+      showMoreButton.style.color = "black";
+    }, 13100);
   }
-});
+};
+
+clickMe.addEventListener("mouseenter", startingAnimation);
