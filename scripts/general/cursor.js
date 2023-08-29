@@ -26,7 +26,7 @@ const resetCursor = () => {
 };
 
 const imagesAndLinks = document.querySelectorAll(
-  "img, a, button, .projects-github, .contact-cross"
+  "img, a, button, .projects-github, .contact-cross, .arrow-container"
 );
 
 imagesAndLinks.forEach((element) => {
