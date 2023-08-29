@@ -73,14 +73,22 @@ clickMe.addEventListener("click", () => {
 });
 
 clickMe.addEventListener("mouseenter", () => {
-  clickMeTitle.innerHTML = "That's wavy!";
-  clickMeTitle.style.color = "yellow";
-  clickMeTitle.style.textShadow = "2px 2px 1px black";
-  clickMeTitle.style.fontSize = "5rem";
-  landingSection.style.backgroundColor = "yellow";
+  if (clickMeTitle.innerHTML != "That's wavy!") {
+    clickMeTitle.innerHTML = "That's wavy!";
+    clickMeTitle.style.color = "yellow";
+    clickMeTitle.style.textShadow = "2px 2px 1px black";
+    clickMeTitle.style.fontSize = "5rem";
+    landingSection.style.backgroundColor = "yellow";
 
-  setTimeout(() => {
-    magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
-    magnetBlock.style.left = "-4vw";
-  }, 1500);
+    setTimeout(() => {
+      magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
+      magnetBlock.style.left = "-4vw";
+    }, 1500);
+
+    setTimeout(() => {
+      magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
+      magnetBlock.style.left = "100vw";
+      landingSection.style.backgroundColor = "#711EF8";
+    }, 2500);
+  }
 });

@@ -293,7 +293,6 @@ body::-webkit-scrollbar {
       border: 1px solid black;
       width: 100vw;
       background-color: yellow;
-      box-shadow: 2px 2px 1px black;
       position: absolute;
       top: calc(20rem + 20vh);
       left: 100vw;
@@ -782,20 +781,25 @@ body::-webkit-scrollbar {
       width: 100%;
       position: relative;
       display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
+
+
+
 .projects__project-preview img {
-      scale: 0.85;
-      height: 100%;
+      scale: 0.9;
+      height: calc(10rem + 25vw);
       width: 90%;
-      padding: 50px 0;
+      padding: 53px 0;
 }
 
 
 .project-video {
       position: absolute;
-      scale: 0.85;
-      height: 100%;
+      scale: 0.9;
+      height: calc(10rem + 25vw);
       width: 90%;
       opacity: 0;
       transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
