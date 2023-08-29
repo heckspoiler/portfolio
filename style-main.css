@@ -287,6 +287,19 @@ body::-webkit-scrollbar {
 
 }
 
+
+.magnet-block {
+      height: calc(0.5rem + 1vw);
+      border: 1px solid black;
+      width: 100vw;
+      background-color: yellow;
+      box-shadow: 2px 2px 1px black;
+      position: absolute;
+      top: calc(20rem + 20vh);
+      left: 100vw;
+}
+
+
 .click-me-h2 {
       margin-top: calc(6rem + 10vw) !important;
       margin: auto;

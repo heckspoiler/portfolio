@@ -9,6 +9,7 @@ const heart = document.querySelector(".landing-heart");
 const clickMe = document.querySelector(".click-me-h2");
 const clickMeTitle = document.querySelector(".click-me-h2 h2");
 const aboutSection = document.querySelector(".about-section");
+const magnetBlock = document.querySelector(".magnet-block");
 
 // random color changes on hover for paragraph container & display image on hover for paragraph container
 
@@ -77,8 +78,9 @@ clickMe.addEventListener("mouseenter", () => {
   clickMeTitle.style.textShadow = "2px 2px 1px black";
   clickMeTitle.style.fontSize = "5rem";
   landingSection.style.backgroundColor = "yellow";
+
+  setTimeout(() => {
+    magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
+    magnetBlock.style.left = "-4vw";
+  }, 1500);
 });
-
-heart.addEventListener("mouseleave", () => {});
-
-console.log(landingSection);
