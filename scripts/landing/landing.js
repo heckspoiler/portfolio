@@ -111,7 +111,7 @@ clickMe.addEventListener("mouseenter", () => {
     }, 5000);
 
     setTimeout(() => {
-      textOne.innerHTML = `I hope <span class="animation"><div class="first"><div>you're doing well!<div></div><div class="second"><div>you enjoy my portfolio</div></div><span>`;
+      textOne.innerHTML = `I hope <span class="animation"><div class="first"><div>you enjoy my portfolio!<div></div><div class="second"><div>you're doing great!</div></div><span>`;
       textOne.style.top = "calc(10rem + 20vh)";
       textOne.style.left = "0vw";
       textOne.style.fontSize = "3.5rem";

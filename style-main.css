@@ -345,7 +345,7 @@ body::-webkit-scrollbar {
 }
 
 .animation div:first-child {
-      animation: text-animation 8s;
+      animation: text-animation 4s;
 }
 
 
@@ -356,24 +356,24 @@ body::-webkit-scrollbar {
             margin-top: 0;
       }
 
-      20% {
+      33% {
             margin-top: 0;
       }
 
-      40% {
+      33% {
             margin-top: -64px;
       }
 
-      60% {
+      66% {
             margin-top: -64px;
       }
 
-      80% {
-            margin-top: 0;
+      66% {
+            margin-top: -64px;
       }
 
       100% {
-            margin-top: 0;
+            margin-top: -64;
 
       }
 }
