@@ -34,6 +34,11 @@
             left: 74vw;
       }
 
+      .projects__project-preview img {
+
+            padding: 33.5px 0;
+      }
+
 
 }
 
