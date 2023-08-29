@@ -1,14 +1,6 @@
 const cursor = document.querySelector(".cursor");
-const heart = document.querySelector(".landing-heart");
 
 //changing cursor position & heart color on hover
-
-heart.addEventListener("mouseenter", () => {
-  cursor.classList.add("hovered");
-});
-heart.addEventListener("mouseleave", () => {
-  cursor.classList.remove("hovered");
-});
 
 const moveCursor = (e) => {
   const offsetTop = 10;

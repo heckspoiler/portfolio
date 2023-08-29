@@ -286,7 +286,9 @@ body::-webkit-scrollbar {
 
 }
 
-
+.click-me-h2 h2 {
+      text-shadow: 7px 7px 1px yellow;
+}
 
 .no-scroll {
       overflow: hidden;

@@ -8,6 +8,7 @@
       <meta name="author" content="Carlo Ettisberger">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      <script src="./scripts/general/tilt.js" type="module"></script>
       <script src="./prompt.js" type="module"></script>
       <script src="./scripts/landing/textWaterfall.js" type="module"></script>
       <script src="./scripts/landing/landing.js" type="module"></script>
@@ -64,10 +65,8 @@
       <!--remove this section probably-->
       <section class="landing-section main-section section" id="landing">
             <section class="landing-sections">
-
-                  <div class="click-me-h2">
+                  <div class="click-me-h2 landing-heart" data-tilt>
                         <h2>show me more!</h2>
-                        <h2>→</h2>
                   </div>
 
             </section>
@@ -131,7 +130,7 @@
                   </div>
                   <div class="about-mid-content-container about-containers">
                         <h2 class="about-h2-outlines">I'm</h2>
-                        <div class="about-h2-carlo-container">
+                        <div class="about-h2-carlo-container" data-tilt>
                               <h2 class="about-h2-black">Carlo</h2>
                               <h2 class="about-h2-green">Carlo</h2>
                         </div>
@@ -514,7 +513,6 @@
 
             </section>
       </div>
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 
