@@ -92,14 +92,13 @@ clickMe.addEventListener("mouseenter", () => {
       landingSection.style.backgroundColor = "#711EF8";
       textOne.style.transition =
         "left 1s cubic-bezier(0.5, 0, 0, 1), color 1s cubic-bezier(0.5, 0, 0, 1), font-size 1s cubic-bezier(0.5, 0, 0, 1), rotate 1s cubic-bezier(0.5, 0, 0, 1), top 1s cubic-bezier(0.5, 0, 0, 1)";
-      textOne.style.fontSize = "2rem";
-      textOne.style.left = "25vw";
+      textOne.style.fontSize = "1.8rem";
+      textOne.style.left = "10vw";
       textOne.style.color = "yellow";
       textOne.style.rotate = "0deg";
     }, 2500);
 
     setTimeout(() => {
-      textOne.innerHTML = "I hope you're doing well!";
       landingSection.style.backgroundColor = "#F46265";
       textOne.style.color = "#31ABFD";
       clickMeTitle.style.color = "#31ABFD";
@@ -107,14 +106,17 @@ clickMe.addEventListener("mouseenter", () => {
 
     setTimeout(() => {
       textOne.style.top = "calc(10rem + 20vh)";
-      textOne.style.fontSize = "4.5rem";
+      textOne.style.fontSize = "0rem";
       clickMeTitle.style.scale = "0";
     }, 5000);
 
     setTimeout(() => {
+      textOne.innerHTML = `I hope <span class="animation"><div class="first"><div>you're doing well!<div></div><div class="second"><div>you enjoy my portfolio</div></div><span>`;
       textOne.style.top = "calc(10rem + 20vh)";
-      textOne.style.fontSize = "4.5rem";
+      textOne.style.left = "0vw";
+      textOne.style.fontSize = "3.5rem";
       clickMeTitle.style.scale = "0";
+      landingSection.style.backgroundColor = "#A4FFDE";
     }, 6000);
   }
 });
