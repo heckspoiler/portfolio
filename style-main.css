@@ -93,17 +93,17 @@ body {
 
 
 h1 {
-      font-family: "Neue Machina Medium";
+      font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-      font-family: "Nohemi Semibold";
+      font-family: "Nohemi Semibold", Arial, sans-serif;
       font-size: calc(100px + 5vw);
       letter-spacing: 2px;
 }
 
 h3 {
-      font-family: "Nohemi Semibold" Arial, sans-serif;
+      font-family: Arial, sans-serif;
       font-size: calc(0.6rem + 2vw);
 }
 
@@ -498,7 +498,7 @@ body::-webkit-scrollbar {
 }
 
 .about-small-text {
-      font-family: "Nohemi Regular" Arial, sans-serif;
+      font-family: Arial, sans-serif !important;
 }
 
 .about-small-text-emphasize {
