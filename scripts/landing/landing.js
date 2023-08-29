@@ -81,10 +81,10 @@ const startingAnimation = () => {
     clickMe.style.border = "0px solid transparent";
     clickMe.style.marginLeft = "20rem !important";
     clickMeTitle.innerHTML = "That's the way!";
-    clickMeTitle.style.color = "yellow";
+    clickMeTitle.style.color = "#FAF126";
     clickMeTitle.style.textShadow = "2px 2px 1px black";
     clickMeTitle.style.fontSize = "5rem";
-    landingSection.style.backgroundColor = "yellow";
+    landingSection.style.backgroundColor = "#FAF126";
     animationHasRun = true;
     setTimeout(() => {
       magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
@@ -99,7 +99,7 @@ const startingAnimation = () => {
         "left 1s cubic-bezier(0.5, 0, 0, 1), color 1s cubic-bezier(0.5, 0, 0, 1), font-size 1s cubic-bezier(0.5, 0, 0, 1), rotate 1s cubic-bezier(0.5, 0, 0, 1), top 1s cubic-bezier(0.5, 0, 0, 1)";
       textOne.style.fontSize = "1.8rem";
       textOne.style.left = "10vw";
-      textOne.style.color = "yellow";
+      textOne.style.color = "#FAF126";
       textOne.style.rotate = "0deg";
     }, 2500);
 
@@ -127,7 +127,7 @@ const startingAnimation = () => {
     }, 6200);
 
     setTimeout(() => {
-      textOne.style.color = "yellow";
+      textOne.style.color = "#FAF126";
       landingSection.style.backgroundColor = "#F46265";
     }, 8200);
 
@@ -162,8 +162,8 @@ const startingAnimation = () => {
       showMoreButton.style.marginTop = "-10px";
       showMoreButton.style.boxShadow = "10px 10px 1px black";
       showMoreButton.style.color = "black";
-      landingSection.style.backgroundColor = "yellow";
-      showMoreButton.style.backgroundColor = "yellow";
+      landingSection.style.backgroundColor = "#FAF126";
+      showMoreButton.style.backgroundColor = "#FAF126";
       textOne.style.color = "black";
     }, 13100);
   }

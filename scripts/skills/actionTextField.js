@@ -31,6 +31,6 @@ buttons.forEach((button) => {
 
     setTimeout(() => {
       actionTextField.style.opacity = 0;
-    }, 3500);
+    }, 2500);
   });
 });

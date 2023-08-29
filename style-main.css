@@ -318,9 +318,9 @@ body::-webkit-scrollbar {
 
 .magnet-block {
       height: calc(0.2rem + 0.8vw);
-      border: 1px solid black;
+      border: 2px dotted black;
       width: 100vw;
-      background-color: yellow;
+      background-color: #FAF126;
       position: absolute;
       top: calc(20rem + 20vh);
       left: 100vw;
@@ -1698,7 +1698,7 @@ body::-webkit-scrollbar {
       flex-direction: column;
       border: 2px solid #FAF126;
       padding: 5px 10px;
-      background-color: #FAF126;
+      background-color: #F46265;
       gap: 10px;
 }
 
@@ -1719,7 +1719,7 @@ body::-webkit-scrollbar {
       align-self: flex-end;
       padding-right: 15px;
       padding: 1px;
-      color: #f46265;
+      color: #FAF126;
 }
 
 .user_message {

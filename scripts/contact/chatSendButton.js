@@ -29,20 +29,25 @@ const askQuestion = (question) => {
 function displayAnswer(answer) {
   let chatAnswer = document.createElement("div");
   chatAnswer.classList.add("chatbot_message-container");
-  chatAnswer.innerHTML = `<svg width="33" height="42" viewBox="0 0 33 42" fill="none"
-  xmlns="http://www.w3.org/2000/svg">
-  <rect x="1.28894" y="9.91333" width="30.9111" height="30.9111"
-        stroke="#F46265" />
-  <path d="M7.02148 9.41333L7.02148 0.936941" stroke="#F46265" />
-  <line x1="24.2222" y1="9.41333" x2="24.2222" y2="0.936941"
-        stroke="#F46265" />
-  <circle cx="9.76394" cy="20.3828" r="4.98611" fill="#F46265" />
-  <circle cx="23.2263" cy="20.3828" r="4.98611" fill="#F46265" />
-  <rect x="6.27356" y="29.8564" width="20.4431" height="5.48472"
-        fill="#F46265" />
-  <circle cx="8.268" cy="19.8843" r="1.99444" fill="#F9E32C" />
-  <circle cx="24.7222" cy="19.8843" r="1.99444" fill="#F9E32C" />
-  </svg> <p class="chatbot_message">${answer}</p>`;
+  chatAnswer.innerHTML = `<svg width="33" height="42" viewBox="0 0 33 42"
+  fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1.28894" y="9.91333" width="30.9111"
+        height="30.9111" stroke="#F9E32C" />
+  <path d="M7.02148 9.41333L7.02148 0.936941"
+        stroke="#F9E32C" />
+  <line x1="24.2222" y1="9.41333" x2="24.2222"
+        y2="0.936941" stroke="#F9E32C" />
+  <circle cx="9.76394" cy="20.3828" r="4.98611"
+        stroke="#F9E32C" />
+  <circle cx="23.2263" cy="20.3828" r="4.98611"
+        stroke="#F9E32C" />
+  <rect x="6.27356" y="29.8564" width="20.4431"
+        height="5.48472" fill="#F9E32C" />
+  <circle cx="8.268" cy="19.8843" r="1.99444"
+        fill="#F9E32C" />
+  <circle cx="24.7222" cy="19.8843" r="1.99444"
+        fill="#F9E32C" />
+</svg> <p class="chatbot_message">${answer}</p>`;
   chatContainer.appendChild(chatAnswer);
   chatContainer.scrollTop = chatContainer.scrollHeight;
 }
