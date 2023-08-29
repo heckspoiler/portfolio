@@ -10,6 +10,7 @@ const clickMe = document.querySelector(".click-me-h2");
 const clickMeTitle = document.querySelector(".click-me-h2 h2");
 const aboutSection = document.querySelector(".about-section");
 const magnetBlock = document.querySelector(".magnet-block");
+const textOne = document.querySelector(".landing-section__animation-text-one");
 
 // random color changes on hover for paragraph container & display image on hover for paragraph container
 
@@ -64,7 +65,7 @@ observer.observe(landingSection);
 
 // heart pop up and button for going down
 
-clickMe.addEventListener("click", () => {
+textOne.addEventListener("click", () => {
   landingSection.style.transform = "translateY(-100vh)";
   landingSection.style.transition = "transform 1s cubic-bezier(0.5, 0, 0, 1)";
   aboutSection.style.transform = "translateY(0)";
@@ -89,6 +90,31 @@ clickMe.addEventListener("mouseenter", () => {
       magnetBlock.style.transition = "left 1s cubic-bezier(0.5, 0, 0, 1)";
       magnetBlock.style.left = "100vw";
       landingSection.style.backgroundColor = "#711EF8";
+      textOne.style.transition =
+        "left 1s cubic-bezier(0.5, 0, 0, 1), color 1s cubic-bezier(0.5, 0, 0, 1), font-size 1s cubic-bezier(0.5, 0, 0, 1), rotate 1s cubic-bezier(0.5, 0, 0, 1), top 1s cubic-bezier(0.5, 0, 0, 1)";
+      textOne.style.fontSize = "2rem";
+      textOne.style.left = "25vw";
+      textOne.style.color = "yellow";
+      textOne.style.rotate = "0deg";
     }, 2500);
+
+    setTimeout(() => {
+      textOne.innerHTML = "I hope you're doing well!";
+      landingSection.style.backgroundColor = "#F46265";
+      textOne.style.color = "#31ABFD";
+      clickMeTitle.style.color = "#31ABFD";
+    }, 4500);
+
+    setTimeout(() => {
+      textOne.style.top = "calc(10rem + 20vh)";
+      textOne.style.fontSize = "4.5rem";
+      clickMeTitle.style.scale = "0";
+    }, 5000);
+
+    setTimeout(() => {
+      textOne.style.top = "calc(10rem + 20vh)";
+      textOne.style.fontSize = "4.5rem";
+      clickMeTitle.style.scale = "0";
+    }, 6000);
   }
 });
