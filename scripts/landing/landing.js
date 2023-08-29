@@ -78,8 +78,9 @@ const startingAnimation = () => {
   if (!animationHasRun) {
     animationHasRun = true;
     clickMe.removeEventListener("mouseenter", startingAnimation);
+    clickMe.style.border = "0px solid transparent";
     clickMe.style.marginLeft = "20rem !important";
-    clickMeTitle.innerHTML = "That's wavy!";
+    clickMeTitle.innerHTML = "That's the way!";
     clickMeTitle.style.color = "yellow";
     clickMeTitle.style.textShadow = "2px 2px 1px black";
     clickMeTitle.style.fontSize = "5rem";
@@ -102,11 +103,11 @@ const startingAnimation = () => {
       textOne.style.rotate = "0deg";
     }, 2500);
 
-    setTimeout(() => {
-      landingSection.style.backgroundColor = "#F46265";
-      textOne.style.color = "#31ABFD";
-      clickMeTitle.style.color = "#31ABFD";
-    }, 4500);
+    // setTimeout(() => {
+    //   landingSection.style.backgroundColor = "#F46265";
+    //   textOne.style.color = "#31ABFD";
+    //   clickMeTitle.style.color = "#31ABFD";
+    // }, 4500);
 
     setTimeout(() => {
       textOne.style.top = "calc(10rem + 20vh)";
@@ -115,6 +116,9 @@ const startingAnimation = () => {
     }, 5000);
 
     setTimeout(() => {
+      landingSection.style.backgroundColor = "#F46265";
+      textOne.style.color = "#31ABFD";
+      clickMeTitle.style.color = "#31ABFD";
       textOne.innerHTML = `I hope <span class="animation"><div class="first"><div>you enjoy my portfolio!<div></div><div class="second"><div>you're doing great!</div></div><span>`;
       textOne.style.top = "calc(10rem + 20vh)";
       textOne.style.left = "0vw";
@@ -124,7 +128,7 @@ const startingAnimation = () => {
 
     setTimeout(() => {
       textOne.style.color = "yellow";
-      landingSection.style.backgroundColor = "rgb(0, 179, 255)";
+      landingSection.style.backgroundColor = "#F46265";
     }, 8200);
 
     setTimeout(() => {
@@ -147,14 +151,20 @@ const startingAnimation = () => {
     }, 12000);
 
     setTimeout(() => {
-      showMoreButton.style.backgroundColor = "lightgrey";
+      showMoreButton.style.backgroundColor = "#F46265";
+      textOne.style.top = "calc(4rem + 10vh)";
+      textOne.style.fontSize = "8rem !important";
+      textOne.innerHTML = "You may enter now!";
     }, 12200);
 
     setTimeout(() => {
-      showMoreButton.style.marginLeft = "39px";
-      showMoreButton.style.marginTop = "-6px";
-      showMoreButton.style.boxShadow = "6px 6px 1px black";
+      showMoreButton.style.marginLeft = "-35px";
+      showMoreButton.style.marginTop = "-10px";
+      showMoreButton.style.boxShadow = "10px 10px 1px black";
       showMoreButton.style.color = "black";
+      landingSection.style.backgroundColor = "yellow";
+      showMoreButton.style.backgroundColor = "yellow";
+      textOne.style.color = "black";
     }, 13100);
   }
 };

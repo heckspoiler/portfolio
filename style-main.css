@@ -25,6 +25,29 @@ input:hover {
       cursor: none;
 }
 
+@-moz-document url-prefix() {
+
+
+      .about-h2-outlines {
+
+            color: black !important;
+            -webkit-text-stroke: none !important;
+
+
+      }
+
+      .about-h2-green {
+            font-family: "Nohemi Semibold", Arial, sans-serif;
+            -webkit-text-stroke: 1px transparent !important;
+            color: rgb(66, 218, 135) !important;
+
+
+      }
+
+      .about-h2-black {}
+}
+
+
 .cursor {
       position: absolute;
       height: 10px;
@@ -271,12 +294,12 @@ body::-webkit-scrollbar {
 .landing-button {
       font-family: "Nohemi Medium", Arial, sans-serif;
       position: absolute;
-      font-size: calc(2rem + 6vw);
-      padding: calc(1rem + 2vw);
+      font-size: calc(1rem + 4vw);
+      padding: calc(0.3rem + 3vw);
       outline: none;
       border: 3px solid transparent;
       box-shadow: 0px 0px 0px transparent;
-      margin-left: 45px;
+      left: 10rem;
       background-color: transparent;
       color: transparent;
       display: none;
@@ -285,7 +308,7 @@ body::-webkit-scrollbar {
 }
 
 .landing-button:hover {
-      background-color: yellow !important;
+      background-color: #F46265 !important;
 }
 
 .landing-button:active {
@@ -294,7 +317,7 @@ body::-webkit-scrollbar {
 
 
 .magnet-block {
-      height: calc(0.2rem + 0.4vw);
+      height: calc(0.2rem + 0.8vw);
       border: 1px solid black;
       width: 100vw;
       background-color: yellow;
@@ -313,28 +336,33 @@ body::-webkit-scrollbar {
       text-shadow: 2px 2px 1px black;
       font-size: 0rem;
       rotate: 24deg;
-      -webkit-text-stroke: 1px black;
       height: 4rem;
       width: 100vw;
+      font-family: "Nohemi Semibold", Arial, sans-serif;
 }
 
 .click-me-h2 {
       margin-top: calc(6rem + 10vw) !important;
       margin-left: 10rem;
       width: 50rem;
+      border: 3px solid black;
+      padding: 30px;
+      transition: border 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+
 }
 
 .click-me-h2 h2 {
       color: black;
+      font-family: "Nohemi Semibold", Arial, sans-serif;
       text-shadow: 0px 0px 0px white;
-      font-size: 3rem;
-      -webkit-text-stroke: 1px black;
+      font-size: 6rem;
       transition: color 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), text-shadow 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), font-size 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), scale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
 }
 
 
 .animation {
       height: 64px;
+      font-family: "Nohemi Semibold", Arial, sans-serif;
       overflow: hidden;
       margin-left: 1rem;
       max-width: 50rem;
@@ -417,6 +445,8 @@ body::-webkit-scrollbar {
       font-family: "Nohemi Semibold", Arial, sans-serif;
       -webkit-text-stroke: 1px black;
       color: #8EFDA0;
+      position: absolute;
+      margin-left: 5px;
 
 
 }
@@ -431,11 +461,6 @@ body::-webkit-scrollbar {
 .about-h2-carlo-container {
       display: flex;
 
-}
-
-.about-h2-green {
-      position: absolute;
-      margin-left: 5px;
 }
 
 .about-h2-black {
@@ -468,6 +493,7 @@ body::-webkit-scrollbar {
 
 .about-description {
       margin-left: calc(4rem + 5vw);
+      font-family: "Nohemi Semibold", Arial, sans-serif;
 }
 
 .hover-svg-laptop {
@@ -1706,6 +1732,7 @@ body::-webkit-scrollbar {
       align-self: flex-end;
       border: 2px solid #FAF126;
       color: #faf126;
+      line-height: 1.1;
 
 }
 
@@ -1730,6 +1757,7 @@ body::-webkit-scrollbar {
       align-self: flex-end;
       border: 2px solid #FAF126;
       background-color: #f46265;
+      line-height: 1.4;
 }
 
 
