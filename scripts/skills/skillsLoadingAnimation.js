@@ -79,7 +79,7 @@ export const observer = new IntersectionObserver(
         createCubesForSection(photoshopBox, 4, "cube-test-photoshop");
         createCubesForSection(indesignBox, 4, "cube-test-indesign");
         createCubesForSection(figmaBox, 5, "cube-test-figma");
-        createCubesForSection(htmlBox, 7, "cube-test-html");
+        createCubesForSection(htmlBox, 6, "cube-test-html");
         createCubesForSection(cssBox, 6, "cube-test-css");
         createCubesForSection(tailwindBox, 4, "cube-test-tailwind");
         createCubesForSection(javaScriptBox, 6, "cube-test-javascript");
