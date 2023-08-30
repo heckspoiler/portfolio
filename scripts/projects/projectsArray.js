@@ -47,9 +47,10 @@ const projectArray = [
     alt: "chewstreet",
     imgUrl: "./assets/images/projects/testimages/chewstreet.png",
     videoUrl: "",
-    link: "",
+    link: "https://www.youtube.com/watch?v=8ybW48rKBME",
     description: "A SaaS for Webdev Everything",
-    descriptionLong: "shopify app",
+    descriptionLong:
+      "Now that you're in outer space, you have plenty of time to kill. I mean, it might take you up to seven years to reach your final destination! If you intend to come back to Earth someday (and we hope you will), you should know that, based on what we've seen in the last decade, technological advancements are unlikely to slow down, especially now with AI in the mix. So you might be better off staying in touch with the latest trends and developments. Need resources for that? We've got you covered here, too. Chewstreet offers basic courses in all things web development and design at a very low price, with payment options available either monthly or annually. Considering recent inflation rates, this could be a real steal in 14 years when you finally touch down on Earth again. This project uses Next.js for server-side content rendering and CSS Tailwind to make it visually appealing. For the backend, we use Supabase, and Stripe handles payments and subscriptions. Since I'm using Stripe's test version, I can't go into production mode, but if you want to invite me for an interview, I can bring my laptop and show you the finished project.",
     technologies: `<p>Next.js</p>
     <div class="decor-dot"></div>
     <p>Tailwind CSS</p>
