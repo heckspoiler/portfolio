@@ -48,6 +48,7 @@ projectsPreview.addEventListener("mouseenter", (e) => {
         videoElement.className = "project-video";
         videoElement.src = `./assets/images/projects/testvideos/${project.alt}.mov`;
         videoElement.alt = `Video of Project ${project.alt}`;
+        videoElement.preload = "metadata";
         videoElement.autoplay = true;
         videoElement.loop = true;
 
