@@ -68,7 +68,7 @@ const projectArray = [
     alt: "spaceclub",
     imgUrl: "./assets/images/projects/testimages/spaceclub.png",
     videoUrl: "",
-    link: "",
+    link: "https://unique-wisp-345515.netlify.app",
     description: "A homepage for an imaginary space travel company",
     descriptionLong:
       "Music here, music there, music everywhere! Not quite, apparently sound waves don't travel in space - so if you're tired of hearing about music, why not treat yourself with something not many people have done before? Space Club offers space travels to places even further away then Australia, and if you're from Australia, even further away than Switzerland! The space club homepage contains some of the destinations possible, but make sure to quit your job in advance because you're not coming back anytime soon! By the way, it's not advised to get out of your way confirm our statement about sound waves not travelling in space, keep your helmet on at all times please. This website is a frontendmentor.io challenge (intermediate-level) and was crafted with Next.js, using its server-sided rendering for SEO-optimization and TailwindCSS, utilizing a modular design strategy for the Tailwind components.",
