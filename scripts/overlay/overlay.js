@@ -3,31 +3,50 @@ const overlayText = document.querySelector(".overlay-title");
 const colors = ["#A4FFDE", "#FFEA29", "#A4FFDE", "#711EF8", "#F46265"];
 const textColors = ["#711EF8", "black", "#711EF8", "#FFEA29", "#FFEA29"];
 
-const text = overlayText.textContent;
-const spans = [];
+const text = overlayText.textContent.split("");
+console.log(text);
 overlayText.innerHTML = "";
+let spanArray = [];
 
-for (let letter of text) {
+text.forEach((letter) => {
   const span = document.createElement("span");
+  span.className = "letter";
   span.textContent = letter;
-  span.style.transition =
-    "opacity 0.1s ease-in-out, margin-top 0.3s ease-in-out";
-  span.style.opacity = 0;
-  span.style.marginTop = `-30px`;
+  spanArray.push(span);
   overlayText.appendChild(span);
-  spans.push(span);
-}
-
-window.addEventListener("load", () => {
-  spans.forEach((span, index) => {
-    setTimeout(() => {
-      span.style.opacity = 1;
-      span.style.marginTop = "0px";
-    }, index * 50 + 1000);
-  });
 });
 
-document.addEventListener("scroll", function () {
+function revealSpans() {
+  for (let i = 0; i < spanArray.length; i++) {
+    let { left, top } = spanArray[i].getBoundingClientRect();
+    top = top - window.innerHeight * 0.6;
+
+    let opacityValue = 1;
+    if (top >= 0) {
+      opacityValue =
+        1 - (top * 0.01 + left * 0.001) < 0.1
+          ? 0.1
+          : 1 - (top * 0.01 + left * 0.001);
+      opacityValue = opacityValue > 1 ? 1 : opacityValue;
+    }
+
+    spanArray[i].style.opacity = opacityValue;
+  }
+}
+
+window.addEventListener("load", function () {
+  overlayText.style.opacity = 1;
+  for (let i = 0; i < spanArray.length; i++) {
+    if (i < 80) {
+      spanArray[i].style.opacity = 1;
+    } else {
+      spanArray[i].style.opacity = 0.1;
+    }
+  }
+});
+
+window.addEventListener("scroll", function () {
+  revealSpans();
   let scrolled =
     document.documentElement.scrollTop /
     (document.documentElement.scrollHeight -

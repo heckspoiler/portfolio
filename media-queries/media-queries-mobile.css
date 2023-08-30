@@ -33,16 +33,29 @@
       .overlay-title {
             font-family: "Nohemi Medium";
             height: 100%;
-            font-size: calc(1rem + 6vw);
+            font-size: clamp(20px, calc(1rem + 6vw), 60px);
             width: 100%;
             line-height: 1.5;
             max-width: 767px !important;
-            padding: 100px;
-            backdrop-filter: blur(40px);
-            transition: color 0.4s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            padding: 90px;
+            transition: color 0.3s ease-in, opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
             color: #711EF8;
-
+            margin-bottom: 250px;
+            opacity: 0;
+            transition-delay: 0s, 0.8s, 0s;
       }
+
+      .letter {
+            opacity: 0;
+            margin-top: 30px;
+            transition: opacity 0.1s ease-in-out, margin-top 0.3s ease-in-out scale 0.3s ease-in-out !important;
+      }
+
+      .eyes {
+            display: none;
+      }
+
+
 
       #fullPage {
             display: none;
