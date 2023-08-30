@@ -62,7 +62,7 @@ app.get("/ask", async (req, res) => {
 // sending mail from contact form
 
 app.post("/form", async (req, res) => {
-  console.log("Body Body BodY", req.body);
+  console.log(req.body);
 
   let mailOptions = {
     from: email,
@@ -78,7 +78,7 @@ app.post("/form", async (req, res) => {
   let mailRedirect = {
     from: email,
     to: req.body.email,
-    subject: `Thank you for your message!`,
+    subject: `Thank you for reaching out!`,
     text: `Thank you for your message! I will get back to you as soon as possible. 
 Best regards, Carlo
              
