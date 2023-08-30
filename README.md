@@ -29,7 +29,7 @@ Just few information about the technologies I used, what I've learned and new th
 
 ### What I've learned
 
-First time using gsap and physics-based programming in general, working with nodemailer to let the user send me an email from my portfolio page. first time programming a chatbot (but I will have to update it since it's probably not the way it should've been programmed), furthermore I've learned a lot about structuring my files and working with js modules, keeping codebases independent and I think I went crazy on CSS and Javascript-animations and by doing that I've also learned a lot. Also haven't used intersectio observer in vanilla js before.
+First time using gsap and physics-based programming in general, working with nodemailer to let the user send me an email from my portfolio page. first time programming a chatbot (but I will have to update it since it's probably not the way it should've been programmed), furthermore I've learned a lot about structuring my files and working with js modules, keeping codebases independent and I think I almost overused CSS and Javascript-animations and by doing that I've also learned a lot. Also haven't used intersection observer in vanilla js before. Plus, whenever I got frustrated with another project, I went back to working on my portfolio because I've had a ton of fun! (vanilla js > react smh)
 
 ### Acknowledgments
 
