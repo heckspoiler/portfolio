@@ -13,6 +13,7 @@ const prompt = require("./prompt");
 const apiKey = process.env.API_KEY;
 const email = process.env.MAIL;
 const password = process.env.MAIL_PW;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -168,7 +169,12 @@ Your email:
 
 // start server & check if it's working
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`Server running at http://localhost:${port}`);
+//   console.log("everything is working fine just like it should be");
+// });
+
+app.listen(PORT, () => {
+  console.log(`Server running at port ${PORT}`);
   console.log("everything is working fine just like it should be");
 });
